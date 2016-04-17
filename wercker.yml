@@ -43,3 +43,7 @@ build:
         name: go test
         code: |
           go test ./...
+    - arjen/hugo-build:
+        version: "0.14"
+        theme: herring-cove
+        flags: --buildDrafts=true
