@@ -1,0 +1,7 @@
+-r test.txt
+grip==3.3.0
+ipdb==0.10.0
+ipython==4.0.0
+ipython-genutils==0.1.0
+pre-commit==0.8.0
+pylint==1.6.4
