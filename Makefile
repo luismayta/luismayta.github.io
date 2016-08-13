@@ -15,8 +15,8 @@ CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
 SETUP = $(shell) $(SCRIPT_DIR)/setup.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
 RUNSERVER = $(shell) $(SCRIPT_DIR)/runserver.sh
-TRANSLATE = $(shell) $(SCRIPT_DIR)/translate.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
+WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
 
 install:
 	$(SETUP)
@@ -55,3 +55,7 @@ runserver:
 
 sync:
 	$(SYNC)
+
+
+watch:
+	$(WATCH)
