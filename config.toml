@@ -1,3 +1,31 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# Site settings
+baseurl = "http://luismayta.github.io"
+languageCode = "en-pe"
+title = "Luis Mayta - DevOps"
+theme = "beautifulhugo"
+pygmentsUseClasses = true
+
+[Params]
+  logo = "img/avatar-icon.png"
+  subtitle = "Software Developer, DevOps, Go Enthusiast"
+
+[Author]
+  name = "Luis Mayta"
+  email = "slovacus@gmail.com"
+  facebook = "slovacus"
+  github = "luismayta"
+  twitter = "slovacus"
+  linkedin = "pe.linkedin.com/in/luismayta"
+  # stackoverflow = "XXXXXXX/username"
+  # soundcloud = "username"
+  # wikipedia = "username"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 2
