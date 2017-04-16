@@ -1,5 +1,4 @@
-# Makefile for luismayta-github.io.
-# See INSTALL for details.
+# Makefile for luismayta.github.io.
 
 # Configuration.
 SHELL = /bin/bash
@@ -12,30 +11,18 @@ WGET = wget
 
 # Bin scripts
 CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
-SETUP = $(shell) $(SCRIPT_DIR)/setup.sh
+GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
+GRIP = $(shell) $(SCRIPT_DIR)/grip.sh
+INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
+PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
+INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
+LINTCODE = $(shell) $(SCRIPT_DIR)/lintcode.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
-RUNSERVER = $(shell) $(SCRIPT_DIR)/runserver.sh
-SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
-
-install:
-	$(SETUP)
-
-create_database:
-	$(CREATE_DATABASE)
-
+GENERATE = $(shell) $(SCRIPT_DIR)/generate.sh
 
 clean:
 	$(CLEAN)
-
-
-clean_migrations: clean
-	$(CLEAN_MIGRATIONS)
-
-
-deploy:
-	$(ANSIBLE_PROVISION)
-	$(ANSIBLE_DEPLOY)
 
 
 distclean: clean
@@ -44,18 +31,36 @@ distclean: clean
 	rm -rf $(ROOT_DIR)/demo/*.egg-info
 
 
+environment:
+	$(PYENV)
+	$(GVM)
+	$(INSTALL)
+
+
+grip:
+	$(GRIP)
+
+
+install:
+	$(INSTALL)
+
+
+generate:
+	$(GENERATE)
+
+
 maintainer-clean: distclean
 	rm -rf $(BIN_DIR)
 	rm -rf $(ROOT_DIR)/lib/
 
 
-runserver:
-	$(RUNSERVER)
-
-
-sync:
-	$(SYNC)
+lintcode:
+	$(LINTCODE)
 
 
 watch:
 	$(WATCH)
+
+
+test:
+	$(TEST)
