@@ -133,3 +133,4 @@ bin/* text eol=lf
 *.pyc       binary
 *.pdf       binary
 *.bz2       binary
+*.sh linguist-language=go
