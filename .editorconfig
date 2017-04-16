@@ -25,4 +25,8 @@ indent_style             = tab
 indent_style             = tab
 
 [Makefile]
-indent_style             = tab
+indent_style = tab
+
+[*.html]
+indent_style = tab
+indent_size = 2
