@@ -1,0 +1,8 @@
+bumplus
+bumpversion
+docker-compose
+pre-commit
+proselint>=0.10.2
+pylint
+restview
+twine

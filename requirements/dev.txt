@@ -1,8 +1,9 @@
--r test.txt
-bumpversion==0.5.3
-grip==3.3.0
-ipdb==0.10.0
-ipython==4.0.0
-ipython-genutils==0.1.0
-pre-commit==0.9.0
-pylint==1.6.4
+-r ../requirements.txt
+
+# Additional requirements for development of this application
+diff-cover                # Changeset diff test coverage
+ipdb
+ipython
+pip-tools                 # Requirements file management
+tox                       # virtualenv management for tests
+tox-battery               # Makes tox aware of requirements file changes
