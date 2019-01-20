@@ -1,0 +1,20 @@
+# Docker Compose
+# https://docs.docker.com/compose/
+# Usage: docker-compose up
+---
+version: "3"
+services:
+  # Python
+  app:
+    ports:
+      - "8000:8000"
+    build:
+      context: .
+      dockerfile: provision/docker/app/Dockerfile
+    environment: &environment
+      - APPLICATION_HOST=0.0.0.0
+      - APPLICATION_PORT=8000
+    volumes:
+      - .:/usr/src
+    env_file:
+      - .env
