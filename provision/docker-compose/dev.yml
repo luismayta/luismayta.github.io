@@ -1,0 +1,26 @@
+# Docker Compose
+# https://docs.docker.com/compose/
+
+version: "3"
+services:
+  # Python
+  app:
+    image: luismayta.github.io-app-dev:0.0.0
+    build:
+      args:
+        stage: dev
+        version: 0.0.0
+
+  check:
+    image: luismayta.github.io-check-dev:0.0.0
+    environment: *environment
+    build:
+      context: .
+      dockerfile: provision/docker/check/Dockerfile
+      args:
+        stage: dev
+        version: 0.0.0
+    volumes:
+      - .:/usr/src
+    env_file:
+      - .env
