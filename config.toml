@@ -1,31 +1,95 @@
-# Site settings
-baseurl = "http://luismayta.github.io"
-languageCode = "en-pe"
-title = "Luis Mayta - DevOps"
-theme = "beautifulhugo"
+baseurl = "https://luismayta.github.io"
+languageCode = "en-us"
+title = "Luis Mayta"
+theme = "hugo-initio"
 pygmentsUseClasses = true
 
-[Params]
-  logo = "img/avatar-icon.png"
-  subtitle = "Software Developer, DevOps, Go Enthusiast"
+[params.google.analytics]
+    trackerID = "UA-65019326-1"
 
-[Author]
-  name = "Luis Mayta"
-  email = "slovacus@gmail.com"
-  facebook = "slovacus"
-  github = "luismayta"
-  twitter = "slovacus"
-  linkedin = "pe.linkedin.com/in/luismayta"
-  # stackoverflow = "XXXXXXX/username"
-  # soundcloud = "username"
-  # wikipedia = "username"
+[params]
+    subtitle = "A Software Developer, SRE, Go Enthusiast"
+    logo = "images/avatar-icon.png"
+    name = "Luis Mayta"
+    description = "A Software Developer, SRE, Go Enthusiast"
+    email = "c2xvdmFjdXNAZ21haWwuY29t"
+    phone = "+51 959196850"
+    year = 2019
+    avatar = "images/me.jpg"
+    background = ""
+    favicon = "images/favicon.ico"
+    DateForm = "January 2, 2006"
+
+    showSubheader = true
+    showServices = false
+    showRecentWorks = true
+    showDownload = false
+    showClients = false
+
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = false
+    footerEnableFormWidget = false
 
 [[menu.main]]
-    name = "Blog"
+    name = "home"
     url = "/"
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "/page/about/"
-    weight = 2
+    name = "resume"
+    url = "https://github.com/luismayta/resume/raw/master/src/examples/resume.pdf"
+    weight = 100
+
+[[menu.main]]
+    name = "blog"
+    url = "https://medium.com/@luismayta"
+    weight = 100
+
+[[params.social]]
+    title = "twitter"
+    url = "https://twitter.com/slovacus"
+    icon = "fa-twitter-square"
+    footer = true
+    sharethis = true
+    network = "twitter"
+
+[[params.social]]
+    title = "github"
+    url = "https://github.com/luismayta"
+    icon = "fa-github"
+    footer = true
+    sharethis = false
+    network = ""
+
+[[params.social]]
+    title = "instagram"
+    url = "https://instagram.com/luismayta"
+    icon = "fa-instagram"
+    footer = true
+    sharethis = false
+    network = ""
+
+[[params.social]]
+    title = "stackoverflow"
+    url = "http://stackoverflow.com/users/872069/luismayta"
+    icon = "fa-stack-overflow"
+    footer = true
+    sharethis = false
+    network = ""
+
+[[params.social]]
+    title = "reddit"
+    url = "https://www.reddit.com/user/luismayta"
+    icon = "fa-reddit"
+    footer = true
+    sharethis = false
+    network = ""
+
+[[params.social]]
+    title = "facebook"
+    url = "https://www.facebook.com/slovacus"
+    icon = "fa-facebook-square"
+    footer = true
+    sharethis = true
+    network = "facebook"

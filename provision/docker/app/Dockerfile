@@ -1,4 +1,4 @@
-FROM python:3.6.4-alpine
+FROM hadenlabs/hugo:0.53
 
 MAINTAINER Luis Mayta <@slovacus>
 
@@ -14,6 +14,4 @@ COPY ./requirements.txt /usr/src/requirements.txt
 # set working directory to /usr/src/
 WORKDIR /usr/src/
 
-RUN apk add --no-cache --update  gcc build-base bash && \
-	pip install -r /usr/src/requirements/$stage.txt
-
+# RUN pip install -r /usr/src/requirements/$stage.txt

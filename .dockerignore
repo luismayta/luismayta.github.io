@@ -1,5 +1,6 @@
 .dockerignore
 docker-compose.yml
+provision
 node_modules/
 .git/
 coverage/

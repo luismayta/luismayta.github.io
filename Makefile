@@ -37,10 +37,9 @@ help:
 	@echo '    clean                     remove files of build'
 	@echo '    setup                     install requirements'
 	@echo ''
-	@make alias.help
-	@make coverage.help
 	@make docker.help
 	@make docs.help
+	@make hugo.help
 	@make test.help
 
 clean:
