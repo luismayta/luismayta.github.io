@@ -1,9 +1,8 @@
 -r dev.txt
 Faker
-PyHamcrest==1.9.0
-pytest-cov                # pytest extension for code coverage statistics
-pytest-flask
-pytest-mock==1.9.0
+mock>=2.0.0
+PyHamcrest>=1.9.0
+pytest-cov>=2.5.1
 pytest-runner
-# Requirements for test runs.
-pytest>=3.7.2
+pytest>=3.2.2
+tox>=2.8.2
