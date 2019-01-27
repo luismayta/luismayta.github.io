@@ -8,11 +8,11 @@ services:
   app:
     ports:
       - "8000:8000"
+    environment: &environment
+      - STAGE=local
     build:
       context: .
       dockerfile: provision/docker/app/Dockerfile
-    environment: &environment
-      - STAGE=local
     volumes:
       - .:/usr/src
     build:
