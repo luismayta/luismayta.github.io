@@ -8,12 +8,24 @@ ARG version
 LABEL NAME luismayta.github.io-app-$stage
 LABEL VERSION $version
 
+ENV PACKAGES bash \
+        build-base \
+        git \
+        gcc \
+        libc-dev \
+        libmagic \
+        linux-headers \
+        make \
+        musl-dev \
+        openssl \
+        pcre-dev \
+        zlib-dev
+
 COPY ./requirements/ /usr/src/requirements/
 COPY ./requirements.txt /usr/src/requirements.txt
 
 # set working directory to /usr/src/
 WORKDIR /usr/src/
 
-RUN apk add --no-cache --update  gcc build-base bash && \
-	pip install -r /usr/src/requirements/$stage.txt
-
+RUN apk add --no-cache --update $PACKAGES && \
+  pip install -r /usr/src/requirements/$stage.txt
