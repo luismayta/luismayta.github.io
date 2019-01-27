@@ -9,7 +9,6 @@ test.help:
 	@echo '    Test:'
 	@echo ''
 	@echo '        test                    Run all test'
-	@echo '        test.run                Run test of test'
 	@echo '        test.lint               Run all pre-commit'
 	@echo '        test.syntax             Run all syntax in code'
 	@echo ''
@@ -18,9 +17,6 @@ test: clean
 	@echo $(MESSAGE) Running tests on the current Python interpreter with coverage $(END)
 	@if [[ -z "${run}" ]]; then \
 		$(DOCKER_TEST) run --rm app bash -c "python setup.py test";\
-	fi
-	@if [[ -n "${run}" ]]; then \
-		$(DOCKER_TEST) run --rm app bash -c "pytest tests/${run}";\
 	fi
 
 test.lint: clean
