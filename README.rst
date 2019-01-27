@@ -1,74 +1,52 @@
-|license|
+Luismayta.Github.Io
+===================
+
+|Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.0
 :Web: https://github.com/luismayta/luismayta.github.io
-:Download: https://github.com/luismayta/luismayta.github.io
-:Source: https://github.com/luismayta/luismayta.github.io
+:Download: http://github.com/luismayta/luismayta.github.io
+:Source: http://github.com/luismayta/luismayta.github.io
 :Keywords: luismayta.github.io
 
 .. contents:: Table of Contents:
     :local:
 
-Luismayta.Github.Io
-===================
+Features
+--------
 
-License
--------
+* Task
 
-The code in this repository is licensed under the AGPL 3.0 unless
-otherwise noted.
-
-Please see ``LICENSE.rst`` for details.
-
-How To Contribute
------------------
-
-Contributions are very welcome.
-
-Please read `How To Contribute <https://github.com/luismayta/luismayta.github.io/blob/master/CONTRIBUTING.rst>`_ for details.
-
-PR description template should be automatically applied if you are sending PR from gitlab interface; otherwise you
-can find it it at `PULL_REQUEST_TEMPLATE.md <https://github.com/luismayta/luismayta.github.io/blob/master/.gitlab/PULL_REQUEST_TEMPLATE.md>`_
-
-Issue report template should be automatically applied if you are sending it from gitlab UI as well; otherwise you
-can find it at `ISSUE_TEMPLATE.md <https://github.com/luismayta/luismayta.github.io/blob/master/.gitlab/ISSUE_TEMPLATE.md>`_
-
-Reporting Security Issues
--------------------------
-
-Please do not report security issues in public. Please email security@chatydelivery.com.
-
-Requirements
+Dependencies
 ------------
 
-This is a list of applications that need to be installed previously to
-enjoy all the goodies of this configuration:
+List of applications:
 
 -  `Python 3.6.4`_
 -  `Docker`_
 -  `Docker Compose`_
 
-.. code:: bash
+Support
+-------
 
-    $ make setup
-    $ make docker.build service=app
+If you want to support this project, i only accept ``IOTA`` :p.
+
+.. code-block:: bash
+
+    Address: FTDCZELEMOQGL9MBWFZENJLFIZUBGMXLFVPRB9HTWYDYPTFKASJCEGJMSAXUWDQC9SJUDMZVIQKACQEEYPEUYLAMMD
 
 
-Troubleshooting
----------------
+Team
+----
 
-Wrong pre-commit with pyenv
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Execute the next:
-
-.. code:: bash
-
-    pyenv shell 3.6.4
-
++---------------+
+| |Luis Mayta|  |
++---------------+
+| `luis mayta`_ |
++---------------+
 
 License
-=======
+-------
 
 MIT
 
@@ -79,36 +57,67 @@ Please see `CHANGELOG`_ for more information what
 has changed recently.
 
 Contributing
-============
+------------
 
-Please see `CONTRIBUTING`_ for details.
+Contributions are welcome!
 
+Review the `CONTRIBUTING`_ for details on how to:
 
-Versioning
-----------
+* Submit issues
+* Submit pull requests
 
-Releases are managed using gitlab release feature. We use [Semantic Versioning](http://semver.org) for all
-the releases. Every change made to the code base will be referred to in the release notes (except for
-cleanups and refactorings).
+Contact Info
+------------
 
-Credits
--------
+Feel free to contact me to discuss any issues, questions, or comments.
 
--  `CONTRIBUTORS`_
+* `Email`_
+* `Twitter`_
+* `GitHub`_
+* `LinkedIn`_
+* `Website`_
+* `PGP`_
 
-Made with :heart: :coffee: and :pizza: by `company`_.
+|linkedin| |beacon| |made|
 
-.. |license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-  :target: LICENSE
-  :alt: License
+Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Links
-.. _`CHANGELOG`: CHANGELOG.rst
-.. _`CONTRIBUTORS`: AUTHORS.rst
-.. _`CONTRIBUTING`: CONTRIBUTING.rst
+.. _`changelog`: CHANGELOG.rst
+.. _`contributors`: AUTHORS
+.. _`contributing`: CONTRIBUTING.rst
 
-.. _`company`: https://github.com/luismayta
-.. dependences
-.. _`Python 3.6.4`: https://www.python.org/downloads/release/python-364
-.. _`Docker`: https://www.docker.com/
-.. _`Docker Compose`: https://docs.docker.com/compose/
+.. _`hadenlabs`: https://github.com/hadenlabs
+.. _`luis mayta`: https://github.com/luismayta
+
+.. _`Github`: https://github.com/luismayta
+.. _`Linkedin`: https://www.linkedin.com/in/luismayta
+.. _`Email`: slovacus@gmail.com
+    :target: mailto:slovacus@gmail.com
+.. _`Twitter`: https://twitter.com/slovacus
+.. _`Website`: http://luismayta.github.io
+.. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
+
+.. |Build Status| image:: https://travis-ci.org/luismayta/luismayta.github.io.svg
+   :target: https://travis-ci.org/luismayta/luismayta.github.io
+.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/luismayta.github.io.svg
+   :target: https://github.com/luismayta/luismayta.github.io/issues
+.. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
+   :target: LICENSE
+
+.. Team:
+.. |Luis Mayta| image:: https://github.com/luismayta.png?size=100
+   :target: https://github.com/luismayta
+
+.. Footer:
+.. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
+   :target: http://pe.linkedin.com/in/luismayta
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/luismayta.github.io/readme
+   :target: https://github.com/luismayta/luismayta.github.io
+.. |made| image:: https://img.shields.io/badge/Made%20with-hugo-1f425f.svg
+   :target: https://gohugo.io
+
+.. Dependences:
+.. _Python 3.6.4: https://www.python.org/downloads/release/python-364
+.. _Docker: https://www.docker.com/
+.. _Docker Compose: https://docs.docker.com/compose/

@@ -33,6 +33,6 @@ modules, and so on.
 Submit bug reports or feature requests
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Just use the Gitlab issue tracker to submit your bug reports and feature
+Just use the GitHub issue tracker to submit your bug reports and feature
 requests. If you are submitting a bug report, please follow the `issue
 template <https://github.com/luismayta/luismayta.github.io/issues/new>`__.
