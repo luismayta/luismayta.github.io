@@ -9,7 +9,7 @@ pygmentsUseClasses = true
 
 [params]
     subtitle = "A Software Developer, SRE, Go Enthusiast"
-    logo = "img/avatar-icon.png"
+    logo = "images/avatar-icon.png"
     name = "Luis Mayta"
     description = "A Software Developer, SRE, Go Enthusiast"
     email = "c2xvdmFjdXNAZ21haWwuY29t"
@@ -30,17 +30,6 @@ pygmentsUseClasses = true
     footerEnableFollowme = true
     footerEnableTextWidget = false
     footerEnableFormWidget = false
-
-[author]
-  name = "Luis Mayta"
-  email = "slovacus@gmail.com"
-  facebook = "slovacus"
-  github = "luismayta"
-  twitter = "slovacus"
-  linkedin = "pe.linkedin.com/in/luismayta"
-  # stackoverflow = "XXXXXXX/username"
-  # soundcloud = "username"
-  # wikipedia = "username"
 
 [[menu.main]]
     name = "home"
@@ -98,8 +87,8 @@ pygmentsUseClasses = true
     network = ""
 
 [[params.social]]
-	title = "facebook"
-	url = "https://www.facebook.com/slovacus"
+    title = "facebook"
+    url = "https://www.facebook.com/slovacus"
     icon = "fa-facebook-square"
     footer = true
     sharethis = true
