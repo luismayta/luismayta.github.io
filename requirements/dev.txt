@@ -1,9 +1,2 @@
 -r ../requirements.txt
-
-# Additional requirements for development of this application
-diff-cover                # Changeset diff test coverage
-ipdb
-ipython
-pip-tools                 # Requirements file management
-tox                       # virtualenv management for tests
-tox-battery               # Makes tox aware of requirements file changes
+-r setup.txt
