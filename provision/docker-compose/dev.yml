@@ -5,14 +5,18 @@ version: "3"
 services:
   # Python
   app:
-    image: luismayta.github.io-app-dev:0.0.0
+    image: luismayta-github-io-app-dev:0.0.0
+    environment: &environment
+      - STAGE=dev
     build:
+      context: .
+      dockerfile: provision/docker/app/Dockerfile
       args:
         stage: dev
         version: 0.0.0
 
   check:
-    image: luismayta.github.io-check-dev:0.0.0
+    image: luismayta-github-io-check-dev:0.0.0
     environment: *environment
     build:
       context: .

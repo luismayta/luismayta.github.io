@@ -6,7 +6,7 @@
 version: "3"
 services:
   app:
-    image: luismayta.github.io-app-test:0.0.0
+    image: luismayta-github-io-app-test:0.0.0
     environment: &environment
       - STAGE=testing
     build:
