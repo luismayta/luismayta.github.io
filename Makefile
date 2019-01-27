@@ -39,6 +39,7 @@ help:
 	@echo ''
 	@make docker.help
 	@make docs.help
+	@make hugo.help
 	@make test.help
 
 clean:
