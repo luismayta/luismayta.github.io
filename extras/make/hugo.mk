@@ -11,13 +11,13 @@ hugo.help:
 	@echo ''
 	@echo '        hugo                    Run all help hugo'
 	@echo '        hugo.server             Run server'
-	@echo '        hugo.public             Run public files generate'
+	@echo '        hugo.generate           Run public files generate'
 	@echo ''
 
 hugo: clean
 	make hugo.help
 
-hugo.public: clean
+hugo.generate:
 	@if [ "${stage}" == "" ]; then \
 		$(docker-compose) -f "${PATH_DOCKER_COMPOSE}"/dev.yml run --rm \
 			"$(SERVICE)" bash -c "hugo --theme=hugo-initio" ; \
