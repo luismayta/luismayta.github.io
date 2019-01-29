@@ -22,6 +22,7 @@ install:
 
 # Build the website
 script:
+  - make environment
   - make setup
   - make hugo.generate
 
