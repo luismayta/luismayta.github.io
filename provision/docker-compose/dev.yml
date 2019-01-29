@@ -5,7 +5,7 @@ version: "3"
 services:
   # Python
   app:
-    image: luismayta-github-io-app-dev:0.0.0
+    image: luismayta-github-io-app-dev
     environment: &environment
       - STAGE=dev
     build:
@@ -13,17 +13,15 @@ services:
       dockerfile: provision/docker/app/Dockerfile
       args:
         stage: dev
-        version: 0.0.0
 
   check:
-    image: luismayta-github-io-check-dev:0.0.0
+    image: luismayta-github-io-check-dev
     environment: *environment
     build:
       context: .
       dockerfile: provision/docker/check/Dockerfile
       args:
         stage: dev
-        version: 0.0.0
     volumes:
       - .:/usr/src
     env_file:
