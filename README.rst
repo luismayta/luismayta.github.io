@@ -3,7 +3,7 @@ Luismayta.Github.Io
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.0
+:Version: 0.1.0
 :Web: https://github.com/luismayta/luismayta.github.io
 :Download: http://github.com/luismayta/luismayta.github.io
 :Source: http://github.com/luismayta/luismayta.github.io
