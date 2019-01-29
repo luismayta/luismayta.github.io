@@ -1,4 +1,4 @@
-baseurl = "https://luismayta.github.io"
+baseurl = "https://luismayta.github.io/"
 languageCode = "en-us"
 title = "Luis Mayta"
 theme = "hugo-initio"
