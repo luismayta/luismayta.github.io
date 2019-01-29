@@ -22,6 +22,7 @@ install:
 
 # Build the website
 script:
+  - make setup
   - make hugo.generate
 
 # Deploy to GitHub pages
