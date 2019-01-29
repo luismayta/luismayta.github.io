@@ -15,8 +15,5 @@ services:
       dockerfile: provision/docker/app/Dockerfile
     volumes:
       - .:/usr/src
-    build:
-      args:
-        version: 0.0.0
     env_file:
       - .env
