@@ -55,13 +55,15 @@ else
 endif
 	@echo
 
-setup: clean
+setup:
 	$(pip_install) "${REQUIREMENTS_DIR}/setup.txt"
 	@if [ -e "${REQUIREMENTS_DIR}/private.txt" ]; then \
 			$(pip_install) "${REQUIREMENTS_DIR}/private.txt"; \
 	fi
-	pre-commit install
-	cp -rf .hooks/prepare-commit-msg .git/hooks/
+	@if [ ! -e "${TRAVIS}" ]; then \
+		pre-commit install; \
+		cp -rf .hooks/prepare-commit-msg .git/hooks/; \
+	fi
 	@if [ ! -e ".env" ]; then \
 		cp -rf .env-sample .env;\
 	fi
