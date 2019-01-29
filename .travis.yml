@@ -15,15 +15,15 @@ before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
+  - make environment
 
 # Clean and don't fail
 install:
   - rm -rf public || exit 0
+  - make setup
 
 # Build the website
 script:
-  - make environment
-  - make setup
   - make hugo.generate
 
 # Deploy to GitHub pages
