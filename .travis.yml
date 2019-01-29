@@ -1,4 +1,12 @@
 ---
+language: python
+
+python:
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+
 sudo: false
 
 services:
@@ -15,12 +23,12 @@ before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - make environment
+  - cp -rf .env-sample .env
 
 # Clean and don't fail
 install:
   - rm -rf public || exit 0
-  - make setup
+  - pip install -r requirements/setup.txt
 
 # Build the website
 script:
