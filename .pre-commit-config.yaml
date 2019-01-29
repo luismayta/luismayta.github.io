@@ -1,6 +1,5 @@
-repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks.git
-    rev: v2.1.0
+    sha: v2.1.0
     hooks:
     -   id: detect-private-key
         files: ^(?!\.?git-crypt)
@@ -50,52 +49,52 @@ repos:
         - --exclude=docs,migrations
     -   id: check-executables-have-shebangs
 -   repo: https://github.com/pre-commit/pre-commit.git
-    rev: v1.14.2
+    sha: v1.14.2
     hooks:
     -   id: validate_manifest
 -   repo: https://github.com/detailyang/pre-commit-shell.git
-    rev: 1.0.4
+    sha: 1.0.4
     hooks:
     -   id: shell-lint
         exclude: ^extras/script/wait-for-it.sh$
         args:
         - --exclude=SC1072,SC1073,SC2068
 -   repo: https://github.com/asottile/add-trailing-comma
-    rev: v0.7.1
+    sha: v0.7.1
     hooks:
     -   id: add-trailing-comma
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-    rev: v1.1.0
+    sha: v1.1.0
     hooks:
     -   id: python-safety-dependencies-check
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
-    rev: v1.0.3
+    sha: v1.0.3
     hooks:
     -   id: python-bandit-vulnerability-check
         args: []
         files: .py$
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
-    rev: v1.1.0
+    sha: v1.1.0
     hooks:
     -   id: markdown-toc
 -   repo: git://github.com/Lucas-C/pre-commit-hooks-markup
-    rev: v1.0.0
+    sha: v1.0.0
     hooks:
     -   id: rst-linter
         exclude: (docs/*|tests/*)
 -   repo: https://github.com/pricematch/pricematch-pre-commit-hooks
-    rev: 93f5296d960021ee1f507a59a0bca1fe8f73c285
+    sha: 93f5296d960021ee1f507a59a0bca1fe8f73c285
     hooks:
     -   id: do_not_commit
 -   repo: git://github.com/luismayta/pre-commit-isort
-    rev: 1.0.1
+    sha: 1.0.1
     hooks:
     -   id: isort
         exclude: __pycache__|migrations|_build|.tox|pootle/static|pootle/translations|pootle/locale|pootle/assets|templates
         args:
         - --settings-path=.isort.cfg
 -   repo: https://github.com/pre-commit/mirrors-pylint.git
-    rev: v2.3.0.dev1
+    sha: v2.3.0.dev1
     hooks:
     -   id: pylint
         exclude: __pycache__|migrations|conf.py|_build|.tox|pootle/static|pootle/translations|pootle/locale|pootle/assets|templates
@@ -104,7 +103,7 @@ repos:
         - --disable=no-name-in-module,import-error,ungrouped-imports
         - --ignore=settings_test, migrations
 -   repo: https://github.com/luismayta/pre-commit-mypy.git
-    rev: 0.1.1
+    sha: 0.1.1
     hooks:
     -   id: mypy
         args:
