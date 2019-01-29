@@ -10,11 +10,21 @@ hugo.help:
 	@echo '    Hugo:'
 	@echo ''
 	@echo '        hugo                    Run all help hugo'
-	@echo '        hugo.server             Run all pre-commit'
+	@echo '        hugo.server             Run server'
+	@echo '        hugo.public             Run public files generate'
 	@echo ''
 
 hugo: clean
 	make hugo.help
+
+hugo.public: clean
+	@if [ "${stage}" == "" ]; then \
+		$(docker-compose) -f "${PATH_DOCKER_COMPOSE}"/dev.yml run --rm \
+			"$(SERVICE)" bash -c "hugo --theme=hugo-initio" ; \
+	else \
+		$(docker-compose) -f "${PATH_DOCKER_COMPOSE}"/"${stage}".yml run --rm \
+			"$(SERVICE)" bash -c "hugo --theme=hugo-initio" ; \
+	fi
 
 hugo.server: clean
 	@if [ "${stage}" == "" ]; then \
