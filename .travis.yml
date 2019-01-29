@@ -34,6 +34,7 @@ script:
 # Deploy to GitHub pages
 deploy:
   provider: pages
+  target-branch: master
   skip_cleanup: true
   local_dir: public
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
