@@ -20,10 +20,10 @@ hugo: clean
 hugo.generate:
 	@if [ "${stage}" == "" ]; then \
 		$(docker-compose) -f "${PATH_DOCKER_COMPOSE}"/dev.yml run --rm \
-			"$(SERVICE)" bash -c "hugo --theme=hugo-initio" ; \
+			"$(SERVICE)" bash -c "hugo --theme=hugo-initio && touch public/.nojekyll" ; \
 	else \
 		$(docker-compose) -f "${PATH_DOCKER_COMPOSE}"/"${stage}".yml run --rm \
-			"$(SERVICE)" bash -c "hugo --theme=hugo-initio" ; \
+			"$(SERVICE)" bash -c "hugo --theme=hugo-initio && touch public/.nojekyll" ; \
 	fi
 
 hugo.server: clean
