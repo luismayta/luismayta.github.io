@@ -30,7 +30,6 @@ install:
 # Build the website
 script:
   - make hugo.generate
-  - touch public/.nojekyll
 
 # Deploy to GitHub pages
 deploy:
