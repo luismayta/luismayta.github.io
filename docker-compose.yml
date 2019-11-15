@@ -2,18 +2,20 @@
 # https://docs.docker.com/compose/
 # Usage: docker-compose up
 ---
-version: "3"
+version: "3.6"
+
 services:
 
   app:
-    ports:
-      - "1313:1313"
-    environment: &environment
-      - STAGE=local
     build:
       context: .
       dockerfile: provision/docker/app/Dockerfile
+    environment: &environment
+      - STAGE=dev
     volumes:
       - .:/usr/src
     env_file:
       - .env
+
+volumes:
+  yarn-cache:
