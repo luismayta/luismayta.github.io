@@ -1,23 +1,9 @@
 
-# Created by https://www.gitignore.io/api/terraform,python,node,ansible,hugo
-# Edit at https://www.gitignore.io/?templates=terraform,python,node,ansible,hugo
 
-### Ansible ###
-*.retry
+# Created by https://www.gitignore.io/api/terraform,python,node,react,next
+# Edit at https://www.gitignore.io/?templates=terraform,python,node,react,next
 
-### Hugo ###
-### Hugo ###
-# gitginore template for Hugo projects
-# website: https://gohugo.io
-
-# generated files by hugo
-/public/
-/resources/_gen/
-
-# executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
+#!! ERROR: next is undefined. Use list command to see defined gitignore types !!#
 
 ### Node ###
 # Logs
@@ -26,6 +12,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -38,6 +28,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
@@ -60,6 +51,9 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -124,6 +118,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -156,14 +151,6 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
 # Scrapy stuff:
 .scrapy
 
@@ -173,15 +160,15 @@ docs/_build/
 # PyBuilder
 target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
 # pyenv
 .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
 
 # celery beat schedule file
 celerybeat-schedule
@@ -189,20 +176,17 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
 # Spyder project settings
 .spyderproject
 .spyproject
 
 # Rope project settings
 .ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
 
 # mkdocs documentation
 /site
@@ -215,8 +199,19 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-### Python Patch ###
-.venv/
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_componets
+
+*.sublime*
+
+psd
+thumb
+sketch
 
 ### Terraform ###
 # Local .terraform directories
@@ -243,10 +238,9 @@ override.tf.json
 *_override.tf.json
 
 # Include override files you do wish to add to version control using negated pattern
-#
 # !example_override.tf
 
-# End of https://www.gitignore.io/api/terraform,python,node,ansible,hugo
-requirements/private.txt
-.vscode
-*.orig
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# End of https://www.gitignore.io/api/terraform,python,node,react,next
