@@ -1,21 +1,35 @@
 # Docker Compose
 # https://docs.docker.com/compose/
 
-version: "3"
+version: "3.6"
 services:
   # Python
   app:
-    image: luismayta-github-io-app-dev
     environment: &environment
       - STAGE=dev
+    image: luismayta.github.io-app-dev
     build:
-      context: .
-      dockerfile: provision/docker/app/Dockerfile
       args:
         stage: dev
 
+  nodejs:
+    ports:
+      - "3000:3000"
+    restart: always
+    image: luismayta.github.io-node-dev
+    build:
+      context: .
+      dockerfile: provision/docker/nodejs/Dockerfile
+      args:
+        stage: dev
+    volumes:
+      - .:/usr/src
+      - yarn-cache:/root/.yarn-cache
+    env_file:
+      - .env
+
   check:
-    image: luismayta-github-io-check-dev
+    image: luismayta.github.io-check-dev
     environment: *environment
     build:
       context: .
