@@ -13,30 +13,19 @@ services:
 # https://docs.travis-ci.com/user/docker/
 env:
   global:
-    - DOCKER_COMPOSE_VERSION=1.23.2
+    - DOCKER_COMPOSE_VERSION=1.25.0
 
 before_install:
   - sudo rm /usr/local/bin/docker-compose
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - cp -rf .env-sample .env
+  - cp -rf .env.example .env
 
-# Clean and don't fail
+# install dependences
 install:
-  - rm -rf public || exit 0
-  - pip install -r requirements/setup.txt
+  - make setup
 
-# Build the website
+# execute test
 script:
-  - make hugo.generate
-
-# Deploy to GitHub pages
-deploy:
-  provider: pages
-  target-branch: master
-  skip_cleanup: true
-  local_dir: public
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: develop
+  - make test.lint
