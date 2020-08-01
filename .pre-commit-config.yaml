@@ -60,7 +60,6 @@ repos:
       - id: check-added-large-files
         files: ^tf|-|\.(py|env|yml|yaml)$
       - id: check-case-conflict
-      - id: check-json
       - id: check-xml
       - id: check-yaml
       - id: check-byte-order-marker
