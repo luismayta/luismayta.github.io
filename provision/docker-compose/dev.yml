@@ -1,7 +1,7 @@
 # Docker Compose
 # https://docs.docker.com/compose/
 
-version: "3.6"
+version: '3.6'
 services:
   # Python
   app:
@@ -13,13 +13,9 @@ services:
         stage: dev
 
   nodejs:
-    ports:
-      - "3000:3000"
     restart: always
     image: luismayta.github.io-node-dev
     build:
-      context: .
-      dockerfile: provision/docker/nodejs/Dockerfile
       args:
         stage: dev
     volumes:

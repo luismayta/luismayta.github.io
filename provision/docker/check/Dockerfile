@@ -1,9 +1,6 @@
-FROM python:3.8.0-slim
-
-MAINTAINER Luis Mayta <@slovacus>
+FROM equipindustry/python:3.8.0-slim
 
 ARG stage
-ARG version
 LABEL NAME luismayta.github.io-check-$stage
 
 COPY Pipfile* /usr/src/
