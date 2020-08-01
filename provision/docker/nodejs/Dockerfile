@@ -1,4 +1,4 @@
-FROM node:10.16.3-slim
+FROM node:12.14.1-slim
 
 ARG stage
 
@@ -10,10 +10,9 @@ ENV PACKAGES bash \
 
 WORKDIR /usr/src/
 
-COPY package.json yarn.lock /usr/src/
+COPY package.json *.lock /usr/src/
 
-RUN apt-get update -y \
-  && apt-get install -y ${PACKAGES} --no-install-recommends \
+RUN apt-get install -y ${PACKAGES} --no-install-recommends \
 
 # add our user and group
   && groupadd -g 500 -r nodejs \
@@ -26,5 +25,4 @@ RUN apt-get update -y \
 # install yarn
   && curl --compressed -o- -L https://yarnpkg.com/install.sh | bash \
   && apt-get clean \
-  && apt-get autoremove \
-  && yarn global add react concurrently
+  && apt-get autoremove
