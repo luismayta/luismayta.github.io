@@ -2,7 +2,7 @@ FROM sphinxdoc/docker-ci
 
 ARG stage
 
-LABEL NAME zsh-tmux-doc
+LABEL NAME luismayta.github.io-doc
 
 ENV USERNAME developer
 
