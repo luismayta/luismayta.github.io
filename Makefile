@@ -1,8 +1,9 @@
 #
-# See ./CONTRIBUTING.rst
+# See ./docs/contributing.md
 #
 
 OS := $(shell uname)
+
 .PHONY: help
 .DEFAULT_GOAL := help
 
@@ -21,21 +22,28 @@ TEAM := luismayta
 REPOSITORY_DOMAIN:=github.com
 REPOSITORY_OWNER:=${TEAM}
 AWS_VAULT ?= ${TEAM}
-PROJECT := luismayta.github.io
+PROJECT:=luismayta.github.io
 PROJECT_PORT := 3000
 
 PYTHON_VERSION=3.8.0
-NODE_VERSION=12.14.1
+NODE_VERSION=14.15.5
 PYENV_NAME="${PROJECT}"
 
 # Configuration.
 SHELL ?=/bin/bash
 ROOT_DIR=$(shell pwd)
 MESSAGE:=🍺️
-MESSAGE_HAPPY:="Done! ${MESSAGE}, Now Happy Hacking"
-SOURCE_DIR=$(ROOT_DIR)/
+MESSAGE_HAPPY?:="Done! ${MESSAGE}, Now Happy Hacking"
+SOURCE_DIR=$(ROOT_DIR)
 PROVISION_DIR:=$(ROOT_DIR)/provision
-FILE_README:=$(ROOT_DIR)/README.rst
+DOCS_DIR:=$(ROOT_DIR)/docs
+README_TEMPLATE:=$(PROVISION_DIR)/templates/README.md.gotmpl
+
+export README_FILE ?= README.md
+export README_YAML ?= provision/generators/README.yaml
+export README_INCLUDES ?= $(file://$(shell pwd)/?type=text/plain)
+
+FILE_README:=$(ROOT_DIR)/README.md
 
 PATH_DOCKER_COMPOSE:=docker-compose.yml -f provision/docker-compose
 
@@ -59,6 +67,7 @@ help:
 	@echo 'Usage:'
 	@echo '    environment               create environment with pyenv'
 	@echo '    setup                     install requirements'
+	@echo '    readme                    build README'
 	@echo ''
 	@make aws.help
 	@make alias.help
@@ -70,13 +79,18 @@ help:
 	@make python.help
 	@make yarn.help
 
+## Create README.md by building it from README.yaml
+readme:
+	@gomplate --file $(README_TEMPLATE) \
+		--out $(README_FILE)
+
 setup:
 	@echo "=====> install packages..."
 	make python.setup
 	make python.precommit
-	make yarn.setup
 	@cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
 	@[ -e ".env" ] || cp -rf .env.example .env
+	make yarn.setup
 	@echo ${MESSAGE_HAPPY}
 
 environment:

@@ -1,0 +1,75 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: luismayta.github.io
+
+company:
+  name: hadenlabs
+  description: |-
+    company labs
+  url: https://hadenlabs.com
+  github: https://github.com/hadenlabs
+  email: support@hadenlabs.com
+
+copyright:
+  name: Hadenlabs
+  url: https://hadenlabs.com
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'APACHE2'
+
+# Canonical GitHub repo
+github_repo: luismayta/luismayta.github.io
+
+# Badges to display
+badges:
+  - name: 'Build Status'
+    image: 'https://travis-ci.org/luismayta/luismayta.github.io.svg?branch=main'
+    url: 'https://travis-ci.org/luismayta/luismayta.github.io'
+  - name: 'Latest Release'
+    image: 'https://img.shields.io/github/release/luismayta/luismayta.github.io.svg'
+    url: 'https://travis-ci.org/luismayta/luismayta.github.io/releases'
+
+# Short description of this project
+description: |-
+  Project
+
+requirements: |-
+
+  This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
+
+  - [Pyenv](https://github.com/pyenv/pyenv)
+  - [Docker](https://www.docker.com/)
+  - [Tfenv](https://github.com/tfutils/tfenv)
+  - [Terragrunt](https://github.com/gruntwork-io/terragrunt)
+  - [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
+  - [terraform-docs](https://github.com/segmentio/terraform-docs)
+
+  or
+
+  - [zsh-pyenv](https://github.com/luismayta/zsh-pyenv)
+  - [zsh-docker](https://github.com/luismayta/zsh-docker)
+  - [zsh-tfenv](https://github.com/luismayta/zsh-tfenv)
+
+# How to use this project
+usage: |-
+  ```bash
+
+    make setup
+
+  ```
+
+# Contributors to this project
+contributors:
+  - name: 'Luis Mayta'
+    github: 'luismayta'
