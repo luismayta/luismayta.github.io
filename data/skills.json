@@ -1,0 +1,15 @@
+{
+  "title": "Main Skills",
+  "skills": [
+    { "name": "Go", "level": 100, "icon": "go" },
+    { "name": "Python", "level": 100, "icon": "python" },
+    { "name": "Terraform", "level": 90, "icon": "terraform" },
+    { "name": "Typescript/Node", "level": 60, "icon": "ts" },
+    { "name": "Lua", "level": 50, "icon": "lua" },
+    { "name": "Kubernetes", "level": 80, "icon": "kubernetes" },
+    { "name": "Docker", "level": 80, "icon": "docker" },
+    { "name": "SQL", "level": 100 },
+    { "name": "Scrum", "level": 100 },
+    { "name": "Linux", "level": 100, "icon": "linux" }
+  ]
+}
