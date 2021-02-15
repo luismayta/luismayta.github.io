@@ -1,7 +1,6 @@
 # Docker Compose
 # https://docs.docker.com/compose/
 
-version: '3.6'
 services:
   # Python
   app:
@@ -11,18 +10,6 @@ services:
     build:
       args:
         stage: dev
-
-  nodejs:
-    restart: always
-    image: luismayta.github.io-node-dev
-    build:
-      args:
-        stage: dev
-    volumes:
-      - .:/usr/src
-      - yarn-cache:/root/.yarn-cache
-    env_file:
-      - .env
 
   check:
     image: luismayta.github.io-check-dev
