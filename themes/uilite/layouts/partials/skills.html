@@ -1,27 +1,18 @@
 {{ $skills := .Site.Data.skills }}
 
 <section id="skills" class="blue">
-  <h2 class="heading">{{ $skills.title }}</h2>
+    <h2 class="heading">{{ $skills.title }}</h2>
 
-  <div class="row">
-    {{ range $key, $value := $skills.skills }}
+    <div class="row">
+        {{ range $key, $value := $skills.skills }}
 
-    <div class="skill col-12 col-lg-6 col-md-6 mb-3">
-      <span class="h6"
-        >{{ if $value.icon }} <i class="fab fa-{{ $value.icon }}"></i> {{ end }}{{ $value.name
-        }}</span
-      >
-      <div class="progress">
-        <div
-          class="progress-bar bg-blue"
-          role="progressbar"
-          style="width: {{ $value.level }}%"
-          aria-valuenow="10"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
+        <div class="skill col-12 col-lg-6 col-md-6 mb-3">
+            <span class="h6">{{ if $value.icon }}
+                    <i class="fab fa-{{ $value.icon }}"></i> {{ end }}{{ $value.name }}</span>
+            <div class="progress">
+                <div class="progress-bar bg-blue" role="progressbar" style="width: {{ $value.level }}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        {{ end }}
     </div>
-    {{ end }}
-  </div>
 </section>
