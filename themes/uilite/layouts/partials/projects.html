@@ -1,0 +1,19 @@
+{{ $projects := .Site.Data.projects }}
+
+<section class="blue">
+  <h2 class="heading">{{ $projects.title }}</h2>
+
+  <div class="row justify-content-md-center">
+    {{ range $index, $element := $projects.projects }}
+
+    <div class="col-12 col-lg-6 col-md-6 mb-3">
+      <div class="card p-4">
+        <h5 class="mt-4">{{ $element.title }}</h5>
+        <p class="text-muted">{{ $element.description }}</p>
+        <a href="{{ $element.site}}" target="_blank">View</a>
+      </div>
+    </div>
+
+    {{ end }}
+  </div>
+</section>
