@@ -1,0 +1,23 @@
+{{ $publications := .Site.Data.publications }}
+
+<section class="green">
+  <h2 class="heading">{{ $publications.title }}</h2>
+
+  <div class="row justify-content-md-center">
+    {{ range $index, $element := $publications.publications }}
+
+    <div class="col-12 col-lg-6 col-md-6 mb-3">
+      <div class="card p-4">
+        <h5 class="mt-4">{{ $element.title }}</h5>
+        <h6 class="text-muted">{{ $element.entity }}</h6>
+
+        {{ if $element.image }}
+        <img src="{{ $element.image }}" style="margin: 2px" /><br />
+        {{ end }}
+        <a href="{{ $element.url}}" target="_blank">View</a>
+      </div>
+    </div>
+
+    {{ end }}
+  </div>
+</section>
