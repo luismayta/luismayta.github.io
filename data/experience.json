@@ -1,0 +1,183 @@
+{
+  "title": "Professional Experience",
+  "experience": [
+    {
+      "timeperiod": "Jan 2014 - Now",
+      "company": "hadenlabs",
+      "website": "https://hadenlabs.com",
+      "role": "CTO and Founder",
+      "description": "Hadenlabs, an enterprise created to develop solutions that allow B2C and C2C interaction. Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "go", "name": "Go" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "dart", "name": "Dart" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "ts", "name": "Typescript" },
+        { "icon": "packer", "name": "Packer" },
+        { "icon": "", "name": "MongoDB" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "k8s", "name": "Kubernetes" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "git", "name": "Git" }
+      ]
+    },
+    {
+      "timeperiod": "Nov 2020 - Now",
+      "company": "Maker Development",
+      "website": "",
+      "role": "DevOps Engineer",
+      "description": "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "go", "name": "Go" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "k8s", "name": "Kubernetes" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "git", "name": "Git" }
+      ]
+    },
+    {
+      "timeperiod": "Nov 2020 - Now",
+      "company": "elpolloescondido",
+      "website": "https://elpolloescondido.pe",
+      "role": "Cloud Consultant / SRE",
+      "description": "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "go", "name": "Golang" },
+        { "icon": "k8s", "name": "Kubernetes" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "", "name": "PostgreSQL" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "terraform", "name": "Terraform" }
+      ]
+    },
+    {
+      "timeperiod": "Jul 2019 - Nov 2020",
+      "company": "EquipIndustry",
+      "website": "https://equipindustry.com",
+      "role": "CoFounder / SRE / CTO",
+      "description": "Site Reliability Engineer providing infrastructure, solutions design, implementation and applications, security and data analytics support, monitoring project where I implemented automated",
+      "tech": [
+        { "icon": "go", "name": "Golang" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "dart", "name": "Dart" },
+        { "icon": "react", "name": "React" },
+        { "icon": "ts", "name": "Typescript" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "", "name": "AMQP" },
+        { "icon": "", "name": "PostgreSQL" }
+      ]
+    },
+    {
+      "timeperiod": "Apr 2020 - Jun 2020",
+      "company": "Osakia",
+      "role": "Cloud Consultant / SRE",
+      "description": "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "docker", "name": "Docker" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "", "name": "PostgreSQL" },
+        { "icon": "", "name": "AMQP" }
+      ]
+    },
+    {
+      "timeperiod": "Jan 2019 - Apr 2020",
+      "company": "Viajes Pacifico/ Grayline Peru",
+      "role": "Cloud Consultant / SRE / DevOps",
+      "description": "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "go", "name": "Golang" },
+        { "icon": "python", "name": "Python" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "ts", "name": "TypeScript" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "", "name": "PostgreSQL" },
+        { "icon": "", "name": "AMQP" }
+      ]
+    },
+    {
+      "timeperiod": "Sep 2018 - Dec 2018",
+      "company": "Viajes Pacifico/ Grayline Peru",
+      "role": "Cloud Consultant",
+      "description": "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "ts", "name": "TypeScript" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "", "name": "PostgreSQL" },
+        { "icon": "", "name": "AMQP" }
+      ]
+    },
+    {
+      "timeperiod": "Nov 2017 - Jul 2019",
+      "company": "Chaty",
+      "role": "CoFounder / SRE / CTO",
+      "description": "Site Reliability Engineer providing infrastructure, solutions design, implementation and applications, security and data analytics support, monitoring project where I implemented automated installation using Ansible, Terraform, CloudFormation, Terragrunt and SaltStack.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "linux", "name": "Linux" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "ts", "name": "TypeScript" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "ubuntu", "name": "Ubuntu" }
+      ]
+    },
+    {
+      "timeperiod": "Dec 2017 - Feb 2018",
+      "company": "Gap Solutions.",
+      "role": "Site Reliability Engineer / Cloud Consultant",
+      "description": "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "git", "name": "Git" },
+        { "icon": "", "name": "PostgreSQL" }
+      ]
+    },
+    {
+      "timeperiod": "Apr 2017 - Dec 2017",
+      "company": "Fashiong Bag Peru",
+      "role": "Cloud Engineer | Cloud Consultant",
+      "description": "Deliver consulting services including solutions design, implementation, security and data analytics.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "", "name": "PostgreSQL" }
+      ]
+    },
+    {
+      "timeperiod": "Jun 2017 - Oct 2017",
+      "company": "La Positiva Seguros",
+      "role": "Cloud Architect",
+      "description": "Providing infrastructure, solutions design, implementation and applications, security and data analytics support, monitoring project where I implemented automated installation using Ansible, Terraform, CloudFormation, Terragrunt.",
+      "tech": [
+        { "icon": "python", "name": "Python" },
+        { "icon": "aws", "name": "Amazon Web Services" },
+        { "icon": "ansible", "name": "Ansible" },
+        { "icon": "terraform", "name": "Terraform" },
+        { "icon": "", "name": "PostgreSQL" }
+      ]
+    }
+  ]
+}
