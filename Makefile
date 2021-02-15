@@ -69,6 +69,7 @@ help:
 	@echo '    setup                     install requirements'
 	@echo '    readme                    build README'
 	@echo ''
+	@make app.help
 	@make aws.help
 	@make alias.help
 	@make docker.help
