@@ -6,15 +6,14 @@ version: '3.6'
 
 services:
   app:
+    ports:
+      - '1313:1313'
     build:
       context: .
       dockerfile: provision/docker/app/Dockerfile
     environment: &environment
       - STAGE=dev
     volumes:
-      - .:/usr/src
+      - .:/src
     env_file:
       - .env
-
-volumes:
-  yarn-cache:
