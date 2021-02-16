@@ -1,5 +1,5 @@
 baseURL = ""
 languageCode = "en-us"
+author = "Luis Mayta"
 title = "Luis Mayta - Software Developer"
 theme="uilite"
-
