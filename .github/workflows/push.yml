@@ -1,0 +1,23 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    name: eploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v1
+
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          HUGO_VERSION: 0.80.0
+          TARGET_REPO: luismayta/luismayta.github.io
+          TARGET_BRANCH: gh-pages
+          TOKEN: ${{ secrets.TOKEN }}
+          CNAME: luismayta.github.io
