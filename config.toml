@@ -1,5 +1,8 @@
 baseURL = ""
 languageCode = "en-us"
-author = "Luis Mayta"
 title = "Luis Mayta - Software Developer"
 theme="uilite"
+
+[author]
+  name = "Luis Mayta"
+  homepage = "https://luismayta.me"
