@@ -1,23 +1,26 @@
 {{ $projects := .Site.Data.projects }}
 
-<section class="blue">
-  <h2 class="heading">{{ $projects.title }}</h2>
+<section id="projects" class="neonblack">
+  <h2 class="heading text-light">{{ $projects.title }}</h2>
 
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center text-center">
+
     {{ range $index, $element := $projects.projects }}
 
     <div class="col-12 col-lg-6 col-md-6 mb-3">
       <div class="card p-4">
+        <i class="mt-3  fa fa-{{ $element.icon }} fa-3x"></i>
         <h5 class="mt-4">{{ $element.title }}</h5>
+        {{ $website := $element.site }}
+        {{ $website_alt := $element.site_alt }}
+        {{ if $website }}
+        <a target="_blank" href="{{ $website }}">
+          <i class="fas fa-link"></i>
+          {{ $website_alt }}
+        </a>
+        {{ end }}
         <p class="text-muted">{{ $element.description }}</p>
-        <h6 class="my-2">{{ $element.role }}</h6>
-          <p>
-          {{ if $element.site }}
-            <a href="{{ $element.site }}" class="small" target="_blank">View</a>
-            {{ end }}
-          </p>
-          <b>Tech stack:</b>
-          <ul class="list-inline small">
+        <ul class="list-inline small">
             {{ range $tindex, $tech := $element.tech }}
             <li class="list-inline-item">
               {{ if $tech.icon }}
@@ -27,6 +30,7 @@
           </ul>
       </div>
     </div>
+
     {{ end }}
   </div>
 </section>
