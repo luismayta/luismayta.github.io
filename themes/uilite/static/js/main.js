@@ -35,8 +35,6 @@ menuBtn.click(function () {
 $(document).ready(function () {
   var elements = $('.sidebar > .main-info *')
 
-  console.log(elements)
-
   for (let i = 0; i < elements.length; i++) {
     setTimeout(function () {
       $(elements[i].tagName).addClass('bs')
@@ -47,3 +45,5 @@ $(document).ready(function () {
     $('.main-content').addClass('active')
   }, 1900)
 })
+
+$('[data-toggle="tooltip"]').tooltip()
