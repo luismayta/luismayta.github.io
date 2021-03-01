@@ -35,8 +35,3 @@ entity = "Udacity"
 title = "Software Developer"
 date = "2011 - 2012"
 entity = "Open Source College"
-
-[[courses]]
-title = "Software Developer"
-date = "2002 - 2007"
-entity = "Instituto Superior Tecnologico Peruano Aleman"
