@@ -1,4 +1,7 @@
-{{ $sidebar := .Site.Data.sidebar }} {{ $social := .Site.Data.social }}
+{{ $sidebar := .Site.Data.sidebar }}
+{{ $social := .Site.Data.social }}
+{{ $socialfas := .Site.Data.socialfas}}
+
 <section id="sidebar" class="sidebar d-flex align-items-center p-5">
   <div class="main-info">
     <img
@@ -15,14 +18,29 @@
     <p class="text-muted">{{ $value }}</p>
     {{ end }}
 
+    <div class="detail-contact my-4">
+      <p> <i class="fa fa-phone"></i> {{ $sidebar.phone }}<br>
+      <i class="fa fa-envelope"></i> {{ $sidebar.email }}</p>
+    </div>
+
     <div class="social my-4">
+
       {{ range $key, $value := $social }}
-      <a target="_blank" href="{{ $value }}">
-        <i class="fab fa-{{ $key }}"></i>
-      </a>
+        <a target="_blank" href="{{ $value }}" rel="me">
+          <i class="fab fa-{{ $key }}"></i>
+        </a>
       {{ end }}
+
+      {{ range $key, $value := $socialfas }}
+        <a target="_blank" href="{{ $value }}">
+          <i class="fas fa-{{ $key }}"></i>
+        </a>
+      {{ end }}
+
     </div>
 
     <a href="#contact" class="btn btn-dark btn-lg">Contact</a>
+    <a target="_blank" href="/resume/luis-mayta-golang-developer.pdf" download class="btn btn-secondary btn-lg ml-2">Resume</a>
+
   </div>
 </section>
