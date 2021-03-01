@@ -1,49 +1,32 @@
-title = "Main Skills"
+title = "Skills"
 
-[[skills]]
-name = "Go"
-level = 100
-icon = "go"
+[skills]
 
-[[skills]]
-name = "Python"
-level = 100
-icon = "python"
+Go = "100"
+Python = "90"
+Linux = "90"
+Terraform = "90"
+Aws = "80"
+Docker = "80"
+Solr = "80"
+ElasticSearch = "80"
+Serverless = "80"
+Kubernetes = "60"
+"Typescript/Node" = "60"
+Lua = "60"
+Jenkins = "60"
+"Machine Learning" = "40"
 
-[[skills]]
-name = "Terraform"
-level = 90
-icon = "terraform"
-
-[[skills]]
-name = "Typescript/Node"
-level = 60
-icon = "ts"
-
-[[skills]]
-name = "Lua"
-level = 50
-icon = "lua"
-
-[[skills]]
-name = "Kubernetes"
-level = 80
-icon = "kubernetes"
-
-[[skills]]
-name = "Docker"
-level = 80
-icon = "docker"
-
-[[skills]]
-name = "SQL"
-level = 100
-
-[[skills]]
-name = "Scrum"
-level = 100
-
-[[skills]]
-name = "Linux"
-level = 100
-icon = "linux"
+[tags]
+Go = "Advanced Go skills"
+Python = "Advanced Python scripting skills"
+Ruby = "Basic Ruby scripting skills"
+Docker = "Dockerized hosting and web development"
+Git = "Proficiency with working in a team"
+Firebase = "Practical experience with hosting Reactjs applications"
+MySQL = "Advanced usage with Views, Functions and Stored Procedures"
+PostgreSQL = "Advanced usage with Views, Functions and Stored Procedures"
+Linux = "> 10 Years experience with various distributions such as Ubuntu and Arch Linux"
+Blockchain = "Communication with the Blockchain API trough 3rd party libraries such as Block.io"
+Bash = "Simple script writing skills"
+Zsh = "Creation plugins"
