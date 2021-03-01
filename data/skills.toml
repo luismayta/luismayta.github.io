@@ -1,0 +1,49 @@
+title = "Main Skills"
+
+[[skills]]
+name = "Go"
+level = 100
+icon = "go"
+
+[[skills]]
+name = "Python"
+level = 100
+icon = "python"
+
+[[skills]]
+name = "Terraform"
+level = 90
+icon = "terraform"
+
+[[skills]]
+name = "Typescript/Node"
+level = 60
+icon = "ts"
+
+[[skills]]
+name = "Lua"
+level = 50
+icon = "lua"
+
+[[skills]]
+name = "Kubernetes"
+level = 80
+icon = "kubernetes"
+
+[[skills]]
+name = "Docker"
+level = 80
+icon = "docker"
+
+[[skills]]
+name = "SQL"
+level = 100
+
+[[skills]]
+name = "Scrum"
+level = 100
+
+[[skills]]
+name = "Linux"
+level = 100
+icon = "linux"
