@@ -1,9 +1,10 @@
-title = " Side Projects"
+title = "Projects"
 
 [[projects]]
 title = "modules terraform Github"
 description = "Modules for management github resources using terraform, terragrunt and aws s3."
 site = "https://github.com/orgs/hadenlabs/projects/33"
+site_alt = "project terraform github"
 role = "tech leader"
 
   [[projects.tech]]
@@ -35,6 +36,7 @@ role = "tech leader"
 title = "modules terraform for Amazon web services"
 description = "Modules for management resources amazon web services using terraform and terragrunt."
 site = "https://registry.terraform.io/namespaces/hadenlabs"
+site_alt = "modules aws with terraform"
 role = "tech leader"
 
   [[projects.tech]]
@@ -69,6 +71,7 @@ role = "tech leader"
 title = "resources for wit"
 description = "Modules of terraform, provider for terraform, examples for wit.ai."
 site = "https://github.com/orgs/hadenlabs/projects/34"
+site_alt = "resources created for wit"
 role = "tech leader"
 
   [[projects.tech]]
@@ -95,6 +98,7 @@ role = "tech leader"
 title = "luca bot for facebook"
 description = "Example bot for facebook implemented using Flask, SQLAlchemy, Marshmallow, factoryboy, pytest and docker."
 site = "https://github.com/luismayta/luca"
+site_alt = "bot facebook"
 role = "tech leader"
 
   [[projects.tech]]
