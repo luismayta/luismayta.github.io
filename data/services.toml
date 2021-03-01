@@ -1,0 +1,21 @@
+title = "services"
+
+[[services]]
+icon = "code"
+title = "DevOps"
+description = "I use the best practices of the industry in order to help you have a smooth development and deployment process."
+
+[[services]]
+icon = "cloud"
+title = "Cloud software development"
+description = "Sophisticated technical capabilities are needed to develop the platform which will enable your product to be used in different situations."
+
+[[services]]
+icon = "barcode"
+title = "Mobile Development"
+description = "If you want to develop a mobile application, we can do it with Flutter too, so your app will be developed both on IOS and Android."
+
+[[services]]
+icon = "fas fa-server"
+title = "Hosting"
+description = "Dockerized Linux Hosting with domain and subdomain management and a daily backup service."
