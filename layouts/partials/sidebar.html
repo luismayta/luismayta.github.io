@@ -40,7 +40,8 @@
     </div>
 
     <a href="#contact" class="btn btn-dark btn-lg">Contact</a>
-    <a target="_blank" href="/resume/luis-mayta-go-developer.pdf" download class="btn btn-secondary btn-lg ml-2">Resume</a>
-
+    {{ if $sidebar.links.resume }}
+    <a target="_blank" href="{{ $sidebar.links.resume | safeURL }}" download class="btn btn-secondary btn-lg ml-2">Resume</a>
+    {{ end }}
   </div>
 </section>
