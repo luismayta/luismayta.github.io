@@ -1,0 +1,415 @@
+title = "Professional Experience"
+
+[[experience]]
+timeperiod = "Jan 2014 - Now"
+company = "hadenlabs"
+website = "https://hadenlabs.com"
+role = "CTO and Founder"
+description = "Hadenlabs, an enterprise created to develop solutions that allow B2C and C2C interaction. Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "dart"
+  name = "Dart"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "ts"
+  name = "Typescript"
+
+  [[experience.tech]]
+  icon = "packer"
+  name = "Packer"
+
+  [[experience.tech]]
+  icon = ""
+  name = "MongoDB"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "k8s"
+  name = "Kubernetes"
+
+  [[experience.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+[[experience]]
+timeperiod = "Nov 2020 - Now"
+company = "Maker Development"
+website = ""
+role = "DevOps Engineer"
+description = "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "k8s"
+  name = "Kubernetes"
+
+  [[experience.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+[[experience]]
+timeperiod = "Nov 2020 - Now"
+company = "elpolloescondido"
+website = "https://elpolloescondido.pe"
+role = "Cloud Consultant / SRE"
+description = "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Golang"
+
+  [[experience.tech]]
+  icon = "k8s"
+  name = "Kubernetes"
+
+  [[experience.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+[[experience]]
+timeperiod = "Jul 2019 - Nov 2020"
+company = "EquipIndustry"
+website = "https://equipindustry.com"
+role = "CoFounder / SRE / CTO"
+description = "Site Reliability Engineer providing infrastructure, solutions design, implementation and applications, security and data analytics support, monitoring project where I implemented automated"
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Golang"
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "dart"
+  name = "Dart"
+
+  [[experience.tech]]
+  icon = "react"
+  name = "React"
+
+  [[experience.tech]]
+  icon = "ts"
+  name = "Typescript"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = ""
+  name = "AMQP"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+[[experience]]
+timeperiod = "Apr 2020 - Jun 2020"
+company = "Osakia"
+role = "Cloud Consultant / SRE"
+description = "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+  [[experience.tech]]
+  icon = ""
+  name = "AMQP"
+
+[[experience]]
+timeperiod = "Jan 2019 - Apr 2020"
+company = "Viajes Pacifico/ Grayline Peru"
+role = "Cloud Consultant / SRE / DevOps"
+description = "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Golang"
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "ts"
+  name = "TypeScript"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+  [[experience.tech]]
+  icon = ""
+  name = "AMQP"
+
+[[experience]]
+timeperiod = "Sep 2018 - Dec 2018"
+company = "Viajes Pacifico/ Grayline Peru"
+role = "Cloud Consultant"
+description = "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "ts"
+  name = "TypeScript"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+  [[experience.tech]]
+  icon = ""
+  name = "AMQP"
+
+[[experience]]
+timeperiod = "Nov 2017 - Jul 2019"
+company = "Chaty"
+role = "CoFounder / SRE / CTO"
+description = "Site Reliability Engineer providing infrastructure, solutions design, implementation and applications, security and data analytics support, monitoring project where I implemented automated installation using Ansible, Terraform, CloudFormation, Terragrunt and SaltStack."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = "linux"
+  name = "Linux"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "ts"
+  name = "TypeScript"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "ubuntu"
+  name = "Ubuntu"
+
+[[experience]]
+timeperiod = "Dec 2017 - Feb 2018"
+company = "Gap Solutions."
+role = "Site Reliability Engineer / Cloud Consultant"
+description = "Deliver consulting services including solutions design, implementation, technical delivery, training and advisory services to support Amazon Web Services, security and data analytics."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "git"
+  name = "Git"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+[[experience]]
+timeperiod = "Apr 2017 - Dec 2017"
+company = "Fashiong Bag Peru"
+role = "Cloud Engineer | Cloud Consultant"
+description = "Deliver consulting services including solutions design, implementation, security and data analytics."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
+
+[[experience]]
+timeperiod = "Jun 2017 - Oct 2017"
+company = "La Positiva Seguros"
+role = "Cloud Architect"
+description = "Providing infrastructure, solutions design, implementation and applications, security and data analytics support, monitoring project where I implemented automated installation using Ansible, Terraform, CloudFormation, Terragrunt."
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = ""
+  name = "PostgreSQL"
