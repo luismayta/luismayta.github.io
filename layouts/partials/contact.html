@@ -1,11 +1,11 @@
 {{ $contact := .Site.Data.forms.contact }}
 
 {{ with $contact }}
-<section id="contact" class="green d-flex align-items-center">
+<section id="contact" class="bg-light d-flex align-items-center">
   <div class="container">
     <h2 class="heading mb-3">Contact</h2>
 
-    <div class="text-success my-3"></div>
+    <div class="text-success my-3">{{ .message }}</div>
     <form action="{{ .postUrl | safeURL }}" method="POST">
       <div class="form-row">
         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
