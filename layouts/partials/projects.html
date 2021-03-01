@@ -1,0 +1,32 @@
+{{ $projects := .Site.Data.projects }}
+
+<section class="blue">
+  <h2 class="heading">{{ $projects.title }}</h2>
+
+  <div class="row justify-content-md-center">
+    {{ range $index, $element := $projects.projects }}
+
+    <div class="col-12 col-lg-6 col-md-6 mb-3">
+      <div class="card p-4">
+        <h5 class="mt-4">{{ $element.title }}</h5>
+        <p class="text-muted">{{ $element.description }}</p>
+        <h6 class="my-2">{{ $element.role }}</h6>
+          <p>
+          {{ if $element.site }}
+            <a href="{{ $element.site }}" class="small" target="_blank">View</a>
+            {{ end }}
+          </p>
+          <b>Tech stack:</b>
+          <ul class="list-inline small">
+            {{ range $tindex, $tech := $element.tech }}
+            <li class="list-inline-item">
+              {{ if $tech.icon }}
+              <i class="fab fa-{{ $tech.icon }}"></i> {{ end }} {{ $tech.name }}
+            </li>
+            {{ end }}
+          </ul>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

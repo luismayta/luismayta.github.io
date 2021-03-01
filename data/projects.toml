@@ -1,0 +1,118 @@
+title = " Side Projects"
+
+[[projects]]
+title = "modules terraform Github"
+description = "Modules for management github resources using terraform, terragrunt and aws s3."
+site = "https://github.com/orgs/hadenlabs/projects/33"
+role = "tech leader"
+
+  [[projects.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[projects.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[projects.tech]]
+  icon = "terragrunt"
+  name = "Terragrunt"
+
+  [[projects.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[projects.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[projects.tech]]
+  icon = "git"
+  name = "Git"
+
+
+[[projects]]
+title = "modules terraform for Amazon web services"
+description = "Modules for management resources amazon web services using terraform and terragrunt."
+site = "https://registry.terraform.io/namespaces/hadenlabs"
+role = "tech leader"
+
+  [[projects.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[projects.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[projects.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[projects.tech]]
+  icon = "terragrunt"
+  name = "Terragrunt"
+
+  [[projects.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[projects.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[projects.tech]]
+  icon = "git"
+  name = "Git"
+
+[[projects]]
+title = "resources for wit"
+description = "Modules of terraform, provider for terraform, examples for wit.ai."
+site = "https://github.com/orgs/hadenlabs/projects/34"
+role = "tech leader"
+
+  [[projects.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[projects.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[projects.tech]]
+  icon = "terragrunt"
+  name = "Terragrunt"
+
+  [[projects.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[projects.tech]]
+  icon = "docker"
+  name = "Docker"
+
+[[projects]]
+title = "luca bot for facebook"
+description = "Example bot for facebook implemented using Flask, SQLAlchemy, Marshmallow, factoryboy, pytest and docker."
+site = "https://github.com/luismayta/luca"
+role = "tech leader"
+
+  [[projects.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[projects.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[projects.tech]]
+  icon = "terragrunt"
+  name = "Terragrunt"
+
+  [[projects.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[projects.tech]]
+  icon = "docker"
+  name = "Docker"
