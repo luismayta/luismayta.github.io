@@ -95,12 +95,7 @@ article {
 }
 
 .heading,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
 	font-family: 'Montserrat', sans-serif !important;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -224,8 +219,28 @@ section {
 		background-color: #4768fd;
 	}
 
+	&.neonpink {
+		background-color: #ff2e63;
+	}
+
+	&.neonyellow {
+		background-color: #fff591;
+	}
+
+	&.neonblue {
+		background-color: #08d9d6;
+	}
+
+	&.neongreen {
+		background-color: #cefc86;
+	}
+
 	&.blue {
 		background-color: #cadfdf;
+	}
+
+	&.grey {
+		background-color: #888888;
 	}
 
 	&.orange {
@@ -277,7 +292,7 @@ section {
 	transition: all 0.4s ease;
 
 	&::before {
-		content: '';
+		content: "";
 		width: 3px;
 		height: 100%;
 		background: #000000;
@@ -288,7 +303,7 @@ section {
 	}
 
 	&::after {
-		content: '';
+		content: "";
 		clear: both;
 		display: table;
 		width: 100%;
@@ -425,35 +440,31 @@ $bar-spacing: 8px;
 }
 
 .hamburger-menu::before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	bottom: $bar-spacing;
 	background: rgba(0, 0, 0, 1);
-	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-		transform 350ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger-menu::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	top: $bar-spacing;
 	background: rgba(0, 0, 0, 1);
-	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-		transform 350ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger-menu.animate::after {
 	top: 0;
 	transform: rotate(45deg);
-	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
-		transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger-menu.animate::before {
 	bottom: 0;
 	transform: rotate(-45deg);
-	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
-		transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
 }

@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "sidebar.html" . }}
+{{ template "_internal/google_analytics.html" . }}
 
 <div class="main-content">
 	{{ if .Site.Data.skills }}{{ partial "skills.html" . }}{{ end }}
@@ -7,6 +8,7 @@
 	{{ if .Site.Data.education }}{{ partial "education.html" . }}{{ end }}
 	{{ if .Site.Data.publications }}{{ partial "publications.html" . }}{{ end }}
 	{{ if .Site.Data.projects }}{{ partial "projects.html" . }}{{ end }}
+	{{ if .Site.Data.achievements }}{{ partial "achievements.html" . }}{{ end }}
 </div>
 
 <div style="z-index: 4; position: relative;">
@@ -15,7 +17,7 @@
 </div>
 
 <div class="main-content">
-	{{ partial "contact.html" . }}		
+	{{ partial "contact.html" . }}
 </div>
 
 {{ partial "footer-scripts.html" . }}
