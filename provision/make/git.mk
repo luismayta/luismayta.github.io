@@ -26,5 +26,5 @@ git.setup:
 .PHONY: git.ignore
 git.ignore:
 	@echo "=====> git ignore generated..."
-	$(GI) ${GIT_IGNORES} > .gitignore
+	@$(GI) ${GIT_IGNORES} > .gitignore
 	@echo ${MESSAGE_HAPPY}
