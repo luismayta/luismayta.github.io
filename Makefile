@@ -105,6 +105,7 @@ setup:
 	@cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
 	@[ -e ".env" ] || cp -rf .env.example .env
 	make yarn.setup
+	make git.setup
 	@echo ${MESSAGE_HAPPY}
 
 setup.sre: setup
