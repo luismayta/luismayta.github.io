@@ -7,11 +7,24 @@ on:
 
 jobs:
   build:
-    name: deploy
     runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get Theme
+        run: git submodule update --init --recursive
+
+      - name: Update theme to latest commit
+        run: git submodule update --remote --merge
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
     steps:
       - name: Checkout gh-pages
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Deploy the site
         uses: benmatselby/hugo-deploy-gh-pages@master
