@@ -33,6 +33,8 @@ PYTHON_VERSION=3.8.0
 NODE_VERSION=14.15.5
 TERRAFORM_VERSION=0.14.5
 PYENV_NAME="${PROJECT}"
+GIT_IGNORES:=python,node,go,terraform
+GI:=gi
 
 # Configuration.
 SHELL ?=/bin/bash
