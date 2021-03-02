@@ -35,6 +35,7 @@ TERRAFORM_VERSION=0.14.5
 PYENV_NAME="${PROJECT}"
 GIT_IGNORES:=python,node,go,terraform
 GI:=gi
+GPG_KEY="9AB4DB0D94F5BCFC758354DCA6D2034D223DDE58"
 
 # Configuration.
 SHELL ?=/bin/bash
@@ -92,6 +93,7 @@ help:
 	@make utils.help
 	@make python.help
 	@make yarn.help
+	@make sops.help
 
 ## Create README.md by building it from README.yaml
 readme:
