@@ -22,11 +22,16 @@ TEAM := luismayta
 REPOSITORY_DOMAIN:=github.com
 REPOSITORY_OWNER:=${TEAM}
 AWS_VAULT ?= ${TEAM}
-PROJECT:=luismayta.github.io
+KEYBASE_OWNER ?= ${TEAM}
+KEYBASE_PATH_TEAM_NAME ?=private
+PROJECT := luismayta.github.io
 PROJECT_PORT := 3000
+
+AWS_PROFILE_NAME ?=
 
 PYTHON_VERSION=3.8.0
 NODE_VERSION=14.15.5
+TERRAFORM_VERSION=0.14.5
 PYENV_NAME="${PROJECT}"
 
 # Configuration.
@@ -44,6 +49,9 @@ export README_YAML ?= provision/generators/README.yaml
 export README_INCLUDES ?= $(file://$(shell pwd)/?type=text/plain)
 
 FILE_README:=$(ROOT_DIR)/README.md
+KEYBASE_VOLUME_PATH ?= /Keybase
+KEYBASE_TEAM_PATH ?=${KEYBASE_VOLUME_PATH}/${KEYBASE_PATH_TEAM_NAME}/${KEYBASE_OWNER}
+KEYBASE_PROJECT_PATH ?= ${KEYBASE_TEAM_PATH}/${REPOSITORY_DOMAIN}/${REPOSITORY_OWNER}/${PROJECT}
 
 PATH_DOCKER_COMPOSE:=docker-compose.yml -f provision/docker-compose
 
@@ -66,8 +74,9 @@ help:
 	@echo ''
 	@echo 'Usage:'
 	@echo '    environment               create environment with pyenv'
-	@echo '    setup                     install requirements'
 	@echo '    readme                    build README'
+	@echo '    setup                     install requirements'
+	@echo '    setup.sre                 install requirements for sre developer'
 	@echo ''
 	@make app.help
 	@make aws.help
@@ -75,7 +84,9 @@ help:
 	@make docker.help
 	@make docs.help
 	@make test.help
+	@make keybase.help
 	@make keys.help
+	@make terragrunt.help
 	@make utils.help
 	@make python.help
 	@make yarn.help
@@ -94,9 +105,16 @@ setup:
 	make yarn.setup
 	@echo ${MESSAGE_HAPPY}
 
+setup.sre: setup
+	@echo "----> install packages for SRE..."
+	make terragrunt.setup
+	@echo ${MESSAGE_HAPPY}
+
 environment:
 	@echo "=====> loading virtualenv ${PYENV_NAME}..."
 	make python.environment
+	make keybase.environment
+	make terragrunt.environment
 	@echo ${MESSAGE_HAPPY}
 
 .PHONY: clean
