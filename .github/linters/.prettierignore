@@ -12,3 +12,4 @@ layouts/
 .build
 .terraform
 CHANGELOG.tpl.md
+*.enc.yaml
