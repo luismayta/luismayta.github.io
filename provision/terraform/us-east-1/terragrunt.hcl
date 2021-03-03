@@ -52,9 +52,14 @@ inputs = {
     token = local.github_token
     owner = local.github_owner
   }
+
+  # secrets vars of sops
+  secrets = local.secrets
+
 }
 
 locals {
+  secrets                   = try(yamldecode(sops_decrypt_file("secrets.enc.yaml")), {})
   aws_vault                 = get_env("AWS_VAULT", "luismayta")
   namespace                 = get_env("NAMESPACE", "luismayta")
   team                      = get_env("KEYBASE_TEAM", "luismayta")

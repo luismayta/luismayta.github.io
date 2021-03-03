@@ -19,6 +19,10 @@ module "repository_luismayta_github_io" {
     "profile",
   ]
 
+  secrets = {
+    TOKEN = var.secrets.github.token
+  }
+
   settings = {
     homepage_url         = "https://luismayta.github.io"
     vulnerability_alerts = true
