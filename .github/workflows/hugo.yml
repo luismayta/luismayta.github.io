@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
         run: git submodule update --remote --merge
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
     needs: build
 
     steps:
