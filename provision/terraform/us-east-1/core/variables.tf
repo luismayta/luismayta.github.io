@@ -66,3 +66,9 @@ variable "github" {
   })
   description = "vars for github"
 }
+
+variable "secrets" {
+  type        = map(any)
+  description = "secrets values of sops"
+  default     = {}
+}
