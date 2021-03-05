@@ -1,3 +1,4 @@
 [submodule "themes/uilite"]
 	path = themes/uilite
 	url = https://github.com/hadenlabs/hugo-theme-uilite.git
+    branch = develop
