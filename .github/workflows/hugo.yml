@@ -10,7 +10,8 @@ jobs:
     runs-on: Ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout gh-pages
+        uses: actions/checkout@v2
 
       - name: Get Theme
         run: git submodule update --init --recursive
@@ -18,19 +19,11 @@ jobs:
       - name: Update theme to latest commit
         run: git submodule update --remote --merge
 
-  deploy:
-    runs-on: Ubuntu-20.04
-    needs: build
-
-    steps:
-      - name: Checkout gh-pages
-        uses: actions/checkout@v2
-
       - name: Deploy the site
         uses: benmatselby/hugo-deploy-gh-pages@master
         env:
           HUGO_VERSION: 0.80.0
           TARGET_REPO: luismayta/luismayta.github.io
           TARGET_BRANCH: gh-pages
-          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.GH_TOKEN }}
           CNAME: luismayta.github.io
