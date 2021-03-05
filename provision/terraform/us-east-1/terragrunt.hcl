@@ -72,7 +72,7 @@ locals {
   repository_owner          = local.team
   repository_name           = local.project
   keybase_path              = get_env("KEYBASE_VOLUME_PATH", "default")
-  keybase_team_path         = format("%s/team/%s", local.keybase_path, local.team)
+  keybase_team_path         = format("%s/private/%s", local.keybase_path, local.team)
   keybase_project_path      = format("%s/%s/%s/%s", local.keybase_team_path, local.repository_domain, local.repository_owner, local.project)
   terragrunt_bucket         = replace(format("%s-%s-terraform-state-%s", local.team, local.project, local.region), ".", "-")
   terragrunt_dynamodb_table = replace(format("%s-%s-%s", local.team, local.project, local.region), ".", "-")
