@@ -20,7 +20,7 @@ module "repository_luismayta_github_io" {
   ]
 
   secrets = {
-    TOKEN = var.secrets.github.token
+    GH_TOKEN = var.secrets.github.token
   }
 
   settings = {
