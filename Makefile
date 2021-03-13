@@ -45,7 +45,7 @@ MESSAGE_HAPPY?:="Done! ${MESSAGE}, Now Happy Hacking"
 SOURCE_DIR=$(ROOT_DIR)
 PROVISION_DIR:=$(ROOT_DIR)/provision
 DOCS_DIR:=$(ROOT_DIR)/docs
-README_TEMPLATE:=$(PROVISION_DIR)/templates/README.md.gotmpl
+README_TEMPLATE:=$(PROVISION_DIR)/templates/README.tpl.md
 
 export README_FILE ?= README.md
 export README_YAML ?= provision/generators/README.yaml
@@ -87,6 +87,7 @@ help:
 	@make docker.help
 	@make docs.help
 	@make test.help
+	@make git.help
 	@make keybase.help
 	@make keys.help
 	@make terragrunt.help
@@ -121,20 +122,3 @@ environment:
 	make keybase.environment
 	make terragrunt.environment
 	@echo ${MESSAGE_HAPPY}
-
-.PHONY: clean
-clean:
-	@rm -f ./dist.zip
-	@rm -fr ./vendor
-
-# Show to-do items per file.
-todo:
-	@grep \
-		--exclude-dir=vendor \
-		--exclude-dir=node_modules \
-		--exclude-dir=bin \
-		--exclude=Makefile \
-		--text \
-		--color \
-		-nRo -E ' TODO:.*|SkipNow|FIXMEE:.*' .
-.PHONY: todo
