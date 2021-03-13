@@ -1,12 +1,20 @@
 name: Deploy to GitHub Pages
 
 on:
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight
+
   push:
     branches:
       - develop
 
+  pull_request:
+    branches:
+      - develop
+
 jobs:
-  build:
+  hugo:
+    name: build and deploy page to gh-page branch
     runs-on: Ubuntu-20.04
 
     steps:
