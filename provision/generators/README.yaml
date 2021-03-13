@@ -7,18 +7,6 @@
 # Name of this project
 name: luismayta.github.io
 
-company:
-  name: hadenlabs
-  description: |-
-    company labs
-  url: https://hadenlabs.com
-  github: https://github.com/hadenlabs
-  email: support@hadenlabs.com
-
-copyright:
-  name: Hadenlabs
-  url: https://hadenlabs.com
-
 email:
   support: support@hadenlabs.com
 
@@ -33,16 +21,25 @@ github_repo: luismayta/luismayta.github.io
 
 # Badges to display
 badges:
-  - name: 'Build Status'
-    image: 'https://travis-ci.org/luismayta/luismayta.github.io.svg?branch=main'
-    url: 'https://travis-ci.org/luismayta/luismayta.github.io'
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/luismayta/luismayta.github.io.svg'
-    url: 'https://travis-ci.org/luismayta/luismayta.github.io/releases'
+  - name: Lint
+    image: https://github.com/luismayta/luismayta.github.io/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/luismayta/luismayta.github.io/actions
+  - name: Hugo
+    image: https://github.com/luismayta/luismayta.github.io/actions/workflows/hugo.yml/badge.svg?branch=develop
+    url: https://github.com/luismayta/luismayta.github.io/actions
+  - name: License
+    image: https://img.shields.io/github/license/luismayta/luismayta.github.io.svg
+    url: https://github.com/luismayta/luismayta.github.io
+  - name: Issues
+    image: https://img.shields.io/github/issues/luismayta/luismayta.github.io.svg
+    url: https://github.com/luismayta/luismayta.github.io
+  - name: Latest Release
+    image: https://img.shields.io/github/release/luismayta/luismayta.github.io.svg
+    url: https://github.com/luismayta/luismayta.github.io/releases
 
 # Short description of this project
 description: |-
-  Project
+  github page profile
 
 requirements: |-
 
@@ -52,7 +49,6 @@ requirements: |-
   - [Docker](https://www.docker.com/)
   - [Tfenv](https://github.com/tfutils/tfenv)
   - [Terragrunt](https://github.com/gruntwork-io/terragrunt)
-  - [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
   - [terraform-docs](https://github.com/segmentio/terraform-docs)
 
   or
@@ -68,8 +64,3 @@ usage: |-
     make setup
 
   ```
-
-# Contributors to this project
-contributors:
-  - name: 'Luis Mayta'
-    github: 'luismayta'
