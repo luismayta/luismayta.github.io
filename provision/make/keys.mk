@@ -1,8 +1,9 @@
 #
-# See ./docs/source/CONTRIBUTING.rst
+# See ./docs/contributing.md
 #
-.PHONY: keys.help
 
+## show keys.help
+.PHONY: keys.help
 keys.help:
 	@echo '    keys:'
 	@echo ''
@@ -10,9 +11,13 @@ keys.help:
 	@echo '        keys.make                 make key openssl by stage'
 	@echo ''
 
+## show help keys commands
+.PHONY: keys
 keys:
 	make keys.help
 
+## show keys make
+.PHONY: keys.make
 keys.make:
 	mkdir -p ${KEYBASE_PATH}/${stage}/openssl/
 	openssl genrsa -out ${PROJECT}-${stage}.pem 2048
