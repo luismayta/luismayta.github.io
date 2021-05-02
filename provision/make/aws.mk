@@ -1,5 +1,5 @@
 #
-# See ./CONTRIBUTING.rst
+# See ./docs/contributing.md
 #
 AWS_SERVICE:=app
 AWS=$(PIPENV_RUN) aws
