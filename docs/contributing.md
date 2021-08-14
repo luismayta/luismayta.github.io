@@ -1,3 +1,6 @@
+<!-- Space: LUISMAYTA.GITHUB.IO -->
+<!-- Title: How To Contribute -->
+
 # How To Contribute
 
 Contributions to luismayta.github.io are welcome.
@@ -48,15 +51,15 @@ Use [slash convention]() with the same leaders as `commits` e.g.:
 
 ### Code Submission
 
-1.  See if a [Pull Request](https://github.com/luismayta/luismayta.github.io/pull-requests/) exists
+1.  See if a [Pull Request](https://github.com/luismayta/luismayta.github.io/pulls/) exists
     - Add some comments or review the code to help it along
     - Don\'t be afraid to comment when logic needs clarification
-2.  Create a Fork and open a [Pull Request](https://github.com/luismayta/luismayta.github.io/pull-requests/) if needed
+2.  Create a Fork and open a [Pull Request](https://github.com/luismayta/luismayta.github.io/pulls/) if needed
 
 ### Code Review
 
 - Anyone can review code
-- Any [Pull Request](https://github.com/luismayta/luismayta.github.io/pull-requests/) should be closed or merged within a week
+- Any [Pull Request](https://github.com/luismayta/luismayta.github.io/pulls/) should be closed or merged within a week
 
 ### Code Acceptance
 
