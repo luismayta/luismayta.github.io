@@ -4,6 +4,11 @@ title = "gitleaks config"
     description = "AWS Access Key"
     regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
     tags = ["key", "AWS"]
+    [rules.allowlist]
+        description = "ignore value fake"
+        regexes = [
+            '''AIDAQEAAAAAAAAAAAAAA''',
+        ]
 
 [[rules]]
     description = "AWS cred file info"
@@ -19,6 +24,21 @@ title = "gitleaks config"
     description = "AWS MWS key"
     regex = '''amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'''
     tags = ["key", "AWS", "MWS"]
+
+[[rules]]
+  description = "Facebook Secret Key"
+  regex = '''(?i)(facebook|fb)(.{0,20})?(?-i)['\"][0-9a-f]{32}['\"]'''
+  tags = ["key", "Facebook"]
+
+[[rules]]
+  description = "Facebook Client ID"
+  regex = '''(?i)(facebook|fb)(.{0,20})?['\"][0-9]{13,17}['\"]'''
+  tags = ["key", "Facebook"]
+
+[[rules]]
+  description = "Facebook access token"
+  regex = '''EAACEdEose0cBA[0-9A-Za-z]+'''
+  tags = ["key", "Facebook"]
 
 [[rules]]
     description = "Twitter Secret Key"
@@ -60,6 +80,21 @@ title = "gitleaks config"
     description = "Google API key"
     regex = '''AIza[0-9A-Za-z\\-_]{35}'''
     tags = ["key", "Google"]
+
+[[rules]]
+  description = "Google Cloud Platform API key"
+  regex = '''(?i)(google|gcp|youtube|drive|yt)(.{0,20})?['\"][AIza[0-9a-z\\-_]{35}]['\"]'''
+  tags = ["key", "Google", "GCP"]
+
+[[rules]]
+  description = "Google OAuth"
+  regex = '''(?i)(google|gcp|auth)(.{0,20})?['"][0-9]+-[0-9a-z_]{32}\.apps\.googleusercontent\.com['"]'''
+  tags = ["key", "Google", "OAuth"]
+
+[[rules]]
+  description = "Google OAuth access token"
+  regex = '''ya29\.[0-9A-Za-z\-_]+'''
+  tags = ["key", "Google", "OAuth"]
 
 [[rules]]
     description = "Heroku API key"
@@ -112,9 +147,20 @@ title = "gitleaks config"
     tags = ["key", "twilio"]
 
 [[rules]]
+  description = "Password in URL"
+  regex = '''[a-zA-Z]{3,10}:\/\/[^\/\s:@]{3,20}:[^\/\s:@]{3,20}@.{1,100}\/?.?'''
+  tags = ["key", "URL", "generic"]
+
+
+[[rules]]
     description = "Env Var"
     regex = '''(?i)(apikey|secret|key|api|password|pass|pw|host)=[0-9a-zA-Z-_.{}]{4,120}'''
     tags = ["env"]
+    [rules.allowlist]
+        description = "ignore value fake"
+        regexes = [
+            '''host=HOST''',
+        ]
 
 [[rules]]
     description = "Email"
@@ -124,13 +170,13 @@ title = "gitleaks config"
         description = "ignore emails"
         regexes = [
             '''[a-zA-Z0-9._%+-]+@users.noreply.github.com''',
+            '''[a-zA-Z0-9._%+-]+@yopmail.com''',
             '''git@github.com''',
             '''git@gitlab.com''',
             '''slovacus@gmail.com''',
-            '''me@luismayta.me''',
-            '''me@luismayta.site''',
+            '''luis@hadenlabs.com''',
             '''hola@hadenlabs.com''',
-            '''youremailhere@gmail.com''',
+            '''hello@hadenlabs.com''',
             '''support@hadenlbas.com''',
             '''support@hadenlabs.com''',
             '''dum-u@hadenlabs.com''',
@@ -164,39 +210,60 @@ title = "gitleaks config"
     tags = ["key", "API", "generic"]
 
 [[rules]]
+  description = "Generic API Key"
+  regex = '''[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|\"][0-9a-zA-Z]{32,45}['|\"]'''
+
+[[rules]]
+  description = "Generic Secret"
+  regex = '''[s|S][e|E][c|C][r|R][e|E][t|T].*['|\"][0-9a-zA-Z]{32,45}['|\"]'''
+
+
+[[rules]]
     description = "Files with keys and credentials"
-    file = '''(?i)(id_rsa|passwd|id_rsa.pub|pgpass|pem|ppk)'''
-    tags = ["key", "credentials"]
+    file = '''(?i)(id_rsa|passwd|id_rsa.pub|pgpass)$'''
+    tags = ["key", "files"]
+
+[[rules]]
+    description = "Extension Files with keys and credentials"
+    file = '''(.*?)(pub|pem|ppk|key)$'''
+    tags = ["key", "files"]
 
 # Global allowlist
 [allowlist]
-    description = "files allowlists"
-    files = [
-      '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
-      '''^\.gitignore$''',
-      '''^\.gitleaks.toml$''',
-      '''^yarn.lock$''',
-    ]
-    commits = [
-      '''00d84ebfafd405a73c2db313191d1ac192f7ecf7''',
-      '''30d7a56ca329955e6299a9cf3cc232d8f5d6de10''',
-      '''5f70284449a91228fb0761215e88a48895068c24''',
-      '''71900238fc8408d761f70ea60ecc35247acbf6d6''',
-      '''7b3674999e6e4081b610c148d622ede70df32521''',
-      '''7c23535425a992d22ed116014f4ac1ea83d627d0''',
-      '''7f7180f77b3a59d18466b5307e384d671b080346''',
-      '''8c361871cb7e34a7df0a90b6055cccab9614067e''',
-      '''95299b6da635972862e642c1d2cfb713ff142042''',
-      '''a19cac0f29404f3f03251d071548a9c7c27938e0''',
-      '''a6c34a8074f08d9ccb0c1b2c0743b72ed9bad098''',
-      '''c41c18a009f854393a4c470e5844109aeee3e885''',
-      '''e11acb5401dd8785cbfe803a6757a2b760c252ef''',
-      '''efa6e6d346c024f27232d65533504dcc1f47419f''',
-      '''f490973517286d4187db61d5ce26892aa0283bfd''',
-    ]
+  description = "Whitelisted files"
+  files = [
+    '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
+    '''^\.gitignore$''',
+    '''^\.gitleaks.toml$''',
+    '''^yarn.lock$''',
+    '''^vendor/(.*?)$''',
+    '''^node_modules/(.*?)$''',
+  ]
+  commits =[
+    '''00d84ebfafd405a73c2db313191d1ac192f7ecf7''',
+    '''30d7a56ca329955e6299a9cf3cc232d8f5d6de10''',
+    '''71900238fc8408d761f70ea60ecc35247acbf6d6''',
+    '''73f3e37c54f4af70891c500c358ebc80f40b99f5''',
+    '''7f7180f77b3a59d18466b5307e384d671b080346''',
+    '''8c361871cb7e34a7df0a90b6055cccab9614067e''',
+    '''93d15eb74dfcf52923df8280fa9aa67ccdd2a96f''',
+    '''a19cac0f29404f3f03251d071548a9c7c27938e0''',
+    '''a6c34a8074f08d9ccb0c1b2c0743b72ed9bad098''',
+    '''ada0090668bb15a28e4a45a731b5252d75e110b3''',
+    '''bc23dd17e63b6779b7817d167c6c4cd657d2ed3e''',
+    '''c41c18a009f854393a4c470e5844109aeee3e885''',
+    '''d05c0b9aeab0d9199db18abc94c9e898f8d6a603''',
+    '''d961826de54b08e23794933e86358d70ac97d906''',
+    '''e11acb5401dd8785cbfe803a6757a2b760c252ef''',
+    '''efa6e6d346c024f27232d65533504dcc1f47419f''',
+    '''f33c466accca2aab04b57ecf8cf4178f352acd65''',
+    '''f490973517286d4187db61d5ce26892aa0283bfd''',
+    '''fcc39328edfc87b9bff762c3dc3d554cf070017f''',
+  ]
+
 
 [whitelist]
-	description = "Ignore"
+  description = "image and html allowlists"
 	files = [
     '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
     '''^\.gitleaks.toml$''',
