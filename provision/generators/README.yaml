@@ -10,6 +10,10 @@ name: luismayta.github.io
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: LUISMAYTA.GITHUB.IO
+  title: readme
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -21,24 +25,24 @@ github_repo: luismayta/luismayta.github.io
 
 # Badges to display
 badges:
-  - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/luismayta/luismayta.github.io?label=latest&sort=semver
+  - name: Latest Release
+    image: https://img.shields.io/github/release/luismayta/luismayta.github.io
     url: https://github.com/luismayta/luismayta.github.io/releases
-  - name: Lint
-    image: https://github.com/luismayta/luismayta.github.io/actions/workflows/lint.yml/badge.svg?branch=develop
-    url: https://github.com/luismayta/luismayta.github.io/actions
   - name: Hugo
     image: https://github.com/luismayta/luismayta.github.io/actions/workflows/hugo.yml/badge.svg?branch=develop
     url: https://github.com/luismayta/luismayta.github.io/actions
-  - name: License
-    image: https://img.shields.io/github/license/luismayta/luismayta.github.io.svg
-    url: https://github.com/luismayta/luismayta.github.io
-  - name: Issues
-    image: https://img.shields.io/github/issues/luismayta/luismayta.github.io.svg
-    url: https://github.com/luismayta/luismayta.github.io
-  - name: Latest Release
-    image: https://img.shields.io/github/release/luismayta/luismayta.github.io.svg
-    url: https://github.com/luismayta/luismayta.github.io/releases
+  - name: Lint
+    image: https://img.shields.io/github/workflow/status/luismayta/luismayta.github.io/lint-code
+    url: https://github.com/luismayta/luismayta.github.io/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
 
 # Short description of this project
 description: |-
@@ -49,16 +53,9 @@ requirements: |-
   This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
 
   - [Pyenv](https://github.com/pyenv/pyenv)
-  - [Docker](https://www.docker.com/)
-  - [Tfenv](https://github.com/tfutils/tfenv)
-  - [Terragrunt](https://github.com/gruntwork-io/terragrunt)
-  - [terraform-docs](https://github.com/segmentio/terraform-docs)
-
   or
-
   - [zsh-pyenv](https://github.com/luismayta/zsh-pyenv)
   - [zsh-docker](https://github.com/luismayta/zsh-docker)
-  - [zsh-tfenv](https://github.com/luismayta/zsh-tfenv)
 
 # How to use this project
 usage: |-
