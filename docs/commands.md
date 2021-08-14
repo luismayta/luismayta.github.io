@@ -1,4 +1,4 @@
 <!-- Space: LUISMAYTA.GITHUB.IO -->
-<!-- Title: FAQ -->
+<!-- Title: Commands -->
 
-# Faq
+# Commands
