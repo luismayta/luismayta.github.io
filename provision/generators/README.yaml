@@ -28,12 +28,12 @@ badges:
   - name: Latest Release
     image: https://img.shields.io/github/release/luismayta/luismayta.github.io
     url: https://github.com/luismayta/luismayta.github.io/releases
-  - name: Hugo
-    image: https://github.com/luismayta/luismayta.github.io/actions/workflows/hugo.yml/badge.svg?branch=develop
-    url: https://github.com/luismayta/luismayta.github.io/actions
   - name: Lint
     image: https://img.shields.io/github/workflow/status/luismayta/luismayta.github.io/lint-code
     url: https://github.com/luismayta/luismayta.github.io/actions?workflow=lint-code
+  - name: CD
+    image: https://github.com/luismayta/luismayta.github.io/actions/workflows/cd.yml/badge.svg?branch=develop
+    url: https://github.com/luismayta/luismayta.github.io/actions?workflow=cd
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
