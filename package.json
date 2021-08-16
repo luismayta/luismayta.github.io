@@ -22,7 +22,6 @@
     "ncu": "ncu -u --target minor",
     "ncu:patch": "ncu -u --target patch",
     "prebuild": "mkdirp build && yarn run clean:build:all",
-    "precommit": "lint-staged",
     "prettier": "prettier --config=.github/linters/prettier.config.js --ignore-path=.github/linters/.prettierignore",
     "prettier:fix": "yarn prettier:lint --write=true",
     "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false --list-different"
@@ -30,12 +29,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn precommit",
-      "commit-msg": "commitlint --config=.github/linters/.commitlintrc.json -E HUSKY_GIT_PARAMS"
-    }
   },
   "repository": {
     "type": "git",
@@ -53,36 +46,32 @@
   "homepage": "https://github.com/luismayta/luismayta.github.io#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/eslint-parser": "^7.13.14",
-    "@commitlint/cli": "^12.1.4",
-    "@hadenlabs/commitlint-config": "^0.1.0",
+    "@babel/eslint-parser": "^7.15.0",
     "@types/chai": "^4.2.21",
     "@types/mocha": "^8.2.3",
     "@types/rimraf": "^3.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
     "babel-cli": "^6.26.0",
     "cross-env": "^7.0.3",
     "chai": "^4.3.4",
-    "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.2",
     "prettier-tslint": "^0.4.2",
-    "mocha": "^8.3.2",
+    "mocha": "^8.4.0",
     "rimraf": "^3.0.2",
     "sinon": "^10.0.1",
     "semantic-release": "^17.4.4",
     "shelljs": "^0.8.4",
-    "slugify": "^1.5.3",
-    "stylelint": "^13.12.0",
+    "slugify": "^1.6.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.5"
   },
   "prettier": "./.github/linters/prettier.config.js",
   "stylintrc": ".github/linters/.stylintrc"
