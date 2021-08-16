@@ -4,7 +4,7 @@ module "repository_luismayta_github_io" {
   }
 
   source      = "hadenlabs/repository/github"
-  version     = "0.7.2"
+  version     = "0.11.0"
   name        = "luismayta.github.io"
   description = "Luismayta github io"
   visibility  = "public"
