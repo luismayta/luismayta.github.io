@@ -46,7 +46,7 @@ vars:
   TERRAFORM_DIR: provision/terraform
   PYTHON_VERSION: 3.9.2
   NODE_VERSION: 14.16.1
-  GIT_IGNORES: python,node,go,zsh,terraform
+  GIT_IGNORES: python,node,go,zsh,terraform,hugo
   README_FILE: README.md
   GIT_IGNORES_CUSTOM: >-
     bin
