@@ -1,5 +1,6 @@
-<!-- Space: LUISMAYTA.GITHUB.IO -->
-<!-- Title: Code Of Conduct -->
+<!-- Space: ~815773537 -->
+<!-- Parent: GithubPage -->
+<!-- Title: GithubPage Code of Conduct -->
 
 # Contributor Covenant Code of Conduct
 

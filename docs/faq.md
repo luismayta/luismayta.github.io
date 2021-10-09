@@ -1,4 +1,5 @@
-<!-- Space: LUISMAYTA.GITHUB.IO -->
-<!-- Title: FAQ -->
+<!-- Space: ~815773537 -->
+<!-- Parent: GithubPage -->
+<!-- Title: GithubPage Faq -->
 
 # Faq

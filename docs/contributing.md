@@ -1,5 +1,6 @@
-<!-- Space: LUISMAYTA.GITHUB.IO -->
-<!-- Title: How To Contribute -->
+<!-- Space: ~815773537 -->
+<!-- Parent: GithubPage -->
+<!-- Title: GithubPage How To Contribute -->
 
 # How To Contribute
 
