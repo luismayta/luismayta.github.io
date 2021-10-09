@@ -56,11 +56,12 @@ requirements: |-
   or
   - [zsh-pyenv](https://github.com/luismayta/zsh-pyenv)
   - [zsh-docker](https://github.com/luismayta/zsh-docker)
+  - [taskfile](https://github.com/go-task/task)
 
 # How to use this project
 usage: |-
   ```bash
 
-    make setup
+    task setup
 
   ```
