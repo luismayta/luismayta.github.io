@@ -1,0 +1,60 @@
+version: '3'
+
+tasks:
+  check:
+    desc: Exist sops and dependences
+    run: once
+    deps:
+      - task: check:sops
+      - task: check:gpg
+      - task: check:vars
+
+  check:sops:
+    desc: Exist sops
+    run: once
+    preconditions:
+      - sh: command -v sops
+        msg: 'Please Install sops'
+
+  check:gpg:
+    desc: Exist sops
+    run: once
+    preconditions:
+      - sh: command -v gpg
+        msg: 'Please Install gpg'
+
+  check:vars:
+    desc: Exist vars for sops
+    run: once
+    preconditions:
+      - sh: test -v GPG_KEY
+        msg: 'Please add var environment GPG_KEY'
+      - sh: test -v KEYBASE_PROJECT_PATH
+        msg: 'Please add var environment KEYBASE_PROJECT_PATH'
+
+  import:
+    desc: Import gpg key.
+    run: once
+    cmds:
+      - >-
+        gpg --import {{.KEYBASE_PROJECT_PATH}}/gpg/key.asc
+    deps:
+      - task: check
+
+  export:
+    desc: export gpg key.
+    run: once
+    cmds:
+      - >-
+        gpg --armor --export-secret-keys {{.GPG_KEY}} > {{.KEYBASE_PROJECT_PATH}}/gpg/key.asc
+    deps:
+      - task: check:sops
+
+  environment:
+    desc: setup environment sops.
+    run: once
+    cmds:
+      - >-
+        mkdir -p {{.KEYBASE_PROJECT_PATH}}/gpg
+    deps:
+      - task: check:sops
