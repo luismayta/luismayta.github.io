@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,node,go,zsh,terraform
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,node,go,zsh,terraform
+# Created by https://www.toptal.com/developers/gitignore/api/python,node,go,zsh,terraform,hugo
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,node,go,zsh,terraform,hugo
 
 ### Go ###
 # Binaries for programs and plugins
@@ -22,6 +22,16 @@
 ### Go Patch ###
 /vendor/
 /Godeps/
+
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
 
 ### Node ###
 # Logs
@@ -347,7 +357,7 @@ zsdoc/data
 /tests/_output/*
 !/tests/_output/.gitkeep
 
-# End of https://www.toptal.com/developers/gitignore/api/python,node,go,zsh,terraform
+# End of https://www.toptal.com/developers/gitignore/api/python,node,go,zsh,terraform,hugo
 # custom git ignore files
 *.lock.hcl
 .scannerwork
