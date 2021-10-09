@@ -1,5 +1,6 @@
-<!-- Space: LUISMAYTA.GITHUB.IO -->
-<!-- Title: Troubleshooting -->
+<!-- Space: ~815773537 -->
+<!-- Parent: GithubPage -->
+<!-- Title: GithubPage Troubleshooting -->
 
 # Troubleshooting
 
