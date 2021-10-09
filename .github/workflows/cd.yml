@@ -22,8 +22,8 @@ on:
 env:
   TARGET_BRANCH: gh-pages
   TARGET_CNAME: luismayta.github.io
-  COMMIT_AUTHOR: "@dum-u"
-  COMMIT_EMAIL: "dum-u@hadenlabs.com"
+  COMMIT_AUTHOR: '@dum-u'
+  COMMIT_EMAIL: 'dum-u@hadenlabs.com'
 
 jobs:
   cd:
