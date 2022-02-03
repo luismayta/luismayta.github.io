@@ -234,7 +234,7 @@ title = "gitleaks config"
   paths = [
     '''^vendor/''',
     '''^bower_components/''',
-    '''^public/js/bower_components/''',
+    '''^public/''',
     '''^node_modules/''',
     '''^theme/''',
   ]
@@ -276,11 +276,14 @@ title = "gitleaks config"
     '''^\.gitignore$''',
     '''^\.gitleaks.toml$''',
     '''^\.gitignore$''',
-    '''^\.gitignore$''',
     '''^yarn.lock$''',
     '''^sonar-project.properties$''',
   ]
-  paths = [
+
+paths = [
     '''^vendor/(.*?)$''',
     '''^node_modules/(.*?)$''',
+    '''^bower_components/(.*?)$''',
+    '''^public/(.*?)$''',
+    '''^theme/(.*?)$''',
   ]
