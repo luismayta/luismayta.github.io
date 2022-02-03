@@ -5,7 +5,7 @@
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "LGPL-3.0",
   "engines": {
-    "node": ">=v14.18.0"
+    "node": ">=14"
   },
   "scripts": {
     "build": "tsc -p ./",
@@ -22,9 +22,9 @@
     "ncu": "ncu -u --target minor",
     "ncu:patch": "ncu -u --target patch",
     "prebuild": "mkdirp build && yarn run clean:build:all",
-    "prettier": "prettier --config=.github/linters/prettier.config.js --ignore-path=.github/linters/.prettierignore",
+    "prettier": "prettier --config=.github/linters/prettier.config.js --ignore-path=.github/linters/.prettierignore --list-different",
     "prettier:fix": "yarn prettier:lint --write=true",
-    "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false --list-different"
+    "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false"
   },
   "publishConfig": {
     "access": "public",
@@ -54,24 +54,24 @@
     "@typescript-eslint/parser": "^4.33.0",
     "babel-cli": "^6.26.0",
     "cross-env": "^7.0.3",
-    "chai": "^4.3.4",
+    "chai": "^4.3.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^5.1.1",
     "prettier": "^2.4.1",
     "prettier-tslint": "^0.4.2",
-    "mocha": "^9.1.2",
+    "mocha": "^9.1.4",
     "rimraf": "^3.0.2",
     "sinon": "^11.1.2",
-    "semantic-release": "^18.0.0",
-    "shelljs": "^0.8.4",
-    "slugify": "^1.6.1",
+    "semantic-release": "^18.0.1",
+    "shelljs": "^0.8.5",
+    "slugify": "^1.6.5",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.4"
   },
   "prettier": "./.github/linters/prettier.config.js",
   "stylintrc": ".github/linters/.stylintrc"
