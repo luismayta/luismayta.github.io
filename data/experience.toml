@@ -1,6 +1,84 @@
 title = "Professional Experience"
 
 [[experience]]
+timeperiod = "Jul 2021 - Now"
+company = "Infosis"
+website = "https://www.infosis.com.ar"
+role = "SRE / Senior DevOps Engineer"
+description = "Empresa Argentina con 20 años de trayectoria en el sector IT, especialistas en soluciones tecnológicas para la gestión y administración de puntos de venta. Incorporamos estándares internacionales que garantizan la excelencia en nuestros productos y servicios."
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "ts"
+  name = "Typescript"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "k8s"
+  name = "Kubernetes"
+
+  [[experience.tech]]
+  icon = "docker"
+  name = "Docker"
+
+  [[experience.tech]]
+  icon = "grafana"
+  name = "Grafana"
+
+  [[experience.tech]]
+  icon = "crossplane"
+  name = "Crossplane"
+
+  [[experience.tech]]
+  icon = "gitlab"
+  name = "Gitlab"
+
+  [[experience.tech]]
+  icon = "ansible"
+  name = "Ansible"
+
+[[experience]]
+timeperiod = "May 2021 - Jul 2021"
+company = "Belcorp"
+website = "https://www.belcorp.biz/"
+role = "DevOps Architect"
+description = "Belcorp has 50 years of experience in direct sales. This corporation is a global leader in beauty and personal care, and markets its products through three comercial brands: L´Bel, Esika and Cyzone. It employs over 7,500 people and has a network of more than 800.000 independents beauty consultants."
+
+  [[experience.tech]]
+  icon = "go"
+  name = "Go"
+
+  [[experience.tech]]
+  icon = "python"
+  name = "Python"
+
+  [[experience.tech]]
+  icon = "terraform"
+  name = "Terraform"
+
+  [[experience.tech]]
+  icon = "aws"
+  name = "Amazon Web Services"
+
+  [[experience.tech]]
+  icon = "jenkins"
+  name = "Jenkins"
+
+[[experience]]
 timeperiod = "Jan 2014 - Now"
 company = "hadenlabs"
 website = "https://hadenlabs.com"
@@ -46,10 +124,6 @@ description = "Hadenlabs, an enterprise created to develop solutions that allow 
   [[experience.tech]]
   icon = "docker"
   name = "Docker"
-
-  [[experience.tech]]
-  icon = "git"
-  name = "Git"
 
 [[experience]]
 timeperiod = "Nov 2020 - Now"

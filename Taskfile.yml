@@ -85,11 +85,7 @@ tasks:
       - changelog:check
       - git:check
       - docs:check
-      - sonar:check
-      - sops:check
       - yarn:check
-      - ssh:check
-      - terragrunt:check
 
   readme:
     run: once
