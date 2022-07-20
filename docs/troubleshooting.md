@@ -1,6 +1,6 @@
 <!-- Space: ~815773537 -->
 <!-- Parent: GithubPage -->
-<!-- Title: GithubPage Troubleshooting -->
+<!-- Title: Troubleshooting GithubPage -->
 
 # Troubleshooting
 
