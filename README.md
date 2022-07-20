@@ -1,6 +1,3 @@
- <!-- Space: ~815773537 -->
-<!-- Title: GithubPage -->
-
 <!--
 
 
@@ -14,10 +11,6 @@
 
 
   -->
-
- <!-- Space: ~815773537 -->
-
- <!-- Title: GithubPage -->
 
 [![Latest Release](https://img.shields.io/github/release/luismayta/luismayta.github.io)](https://github.com/luismayta/luismayta.github.io/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/luismayta.github.io/lint-code)](https://github.com/luismayta/luismayta.github.io/actions?workflow=lint-code) [![CD](https://github.com/luismayta/luismayta.github.io/actions/workflows/cd.yml/badge.svg?branch=develop)](https://github.com/luismayta/luismayta.github.io/actions?workflow=cd) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
@@ -36,10 +29,10 @@ This is a list of applications that need to be installed previously to enjoy all
 
 ## Usage
 
+# How to use this project
+
 ```bash
-
-  task setup
-
+task setup
 ```
 
 ## Help
@@ -50,22 +43,7 @@ File a GitHub [issue](https://github.com/luismayta/luismayta.github.io/issues).
 
 ## Contributing
 
-### Bug Reports & Feature Requests
-
-Please use the [issue tracker](https://github.com/luismayta/luismayta.github.io/issues) to report any bugs or file feature requests.
-
-### Development
-
-In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
-
-1.  **Fork** the repo on GitHub
-2.  **Clone** the project to your own machine
-3.  **Commit** changes to your own branch
-4.  **Push** your work back up to your fork
-
-5.  Submit a **Pull Request** so that we can review your changes
-
-**NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
+See [Contributing](./docs/contributing.md).
 
 ## Module Versioning
 
