@@ -10,10 +10,6 @@ name: luismayta.github.io
 email:
   support: support@hadenlabs.com
 
-confluence:
-  space: ~815773537
-  title: GithubPage
-
 # Logo for this project
 #logo: docs/logo.png
 
@@ -58,10 +54,5 @@ requirements: |-
   - [zsh-docker](https://github.com/luismayta/zsh-docker)
   - [taskfile](https://github.com/go-task/task)
 
-# How to use this project
-usage: |-
-  ```bash
-
-    task setup
-
-  ```
+usages:
+  - docs/usage.md
