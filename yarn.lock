@@ -6353,7 +6353,7 @@ stylelint-config-standard@^31.0.0:
   dependencies:
     stylelint-config-recommended "^11.0.0"
 
-stylelint@^15.3.0:
+stylelint@^15.4.0:
   version "15.4.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-15.4.0.tgz#3958fff41fbcd68cf947fdecb329762d45f87013"
   integrity sha512-TlOvpG3MbcFwHmK0q2ykhmpKo7Dq892beJit0NPdpyY9b1tFah/hGhqnAz/bRm2PDhDbJLKvjzkEYYBEz7Dxcg==
