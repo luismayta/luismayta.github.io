@@ -46,7 +46,7 @@
   "homepage": "https://github.com/luismayta/luismayta.github.io#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/eslint-parser": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.8",
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
     "@types/rimraf": "^3.0.2",
