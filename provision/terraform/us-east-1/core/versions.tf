@@ -19,7 +19,7 @@ terraform {
 
     null = {
       source  = "hashicorp/null"
-      version = ">= 0.1.0"
+      version = ">=0.1.0"
     }
 
     template = {
@@ -29,7 +29,7 @@ terraform {
 
     tls = {
       source  = "hashicorp/tls"
-      version = ">= 2.1.1"
+      version = ">=2.1.1"
     }
   }
 }
