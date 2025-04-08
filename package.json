@@ -66,7 +66,7 @@
     "rimraf": "^5.0.10",
     "sinon": "^15.2.0",
     "semantic-release": "^21.1.2",
-    "shelljs": "^0.8.5",
+    "shelljs": "^0.9.2",
     "slugify": "^1.6.6",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^33.0.0",
